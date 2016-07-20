@@ -1,0 +1,99 @@
+body{
+    position: relative;
+}
+
+h1{
+    font-family: "Minion";
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+h2{
+    font-family: "Minion";
+    font-weight: 700;
+    font-size: 4rem;
+}
+p{
+    font-family: "myriad";
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+.AC_px10{
+    padding-right: 10vmin;
+    padding-left: 10vmin;
+}
+
+.AC_py10{
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+}
+
+.AC_px5{
+    padding-right: 5vmin;
+    padding-left: 5vmin;
+}
+
+.AC_py5{
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+
+.AC_px3{
+    padding-right: 3vmin;
+    padding-left: 3vmin;
+}
+
+.AC_py3{
+    padding-top: 3vmin;
+    padding-bottom: 3vmin;
+}
+
+.AC_home-video{
+    height: 80vmin;
+}
+
+
+.AC_home-subvideo{
+    height: 40vmax;
+}
+
+.AC_text-center{
+    text-align: center;
+}
+
+.AC_text-left{
+    text-align: left;
+}
+
+.AC_text-right{
+    text-align: right;
+}
+
+.AC_col-centered{
+    margin: 0 auto;
+}
+
+.AC_home-persona{
+    background: gray;
+    min-height: 300px;
+    padding: 2rem;
+}
+
+#AC_navbar{
+    height: 100%;
+    position: relative;
+}
+
+.AC_navbar{
+    width: 100%;
+    transition: .2s all .2s ease-in;
+    z-index: 10;
+    background: none;
+    border: none;
+}
+
+.AC_navbar.affix{
+   transform: translateY(10px);
+   top: 0;
+}
