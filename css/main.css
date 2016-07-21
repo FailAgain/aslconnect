@@ -3,20 +3,28 @@ body{
 }
 
 h1{
-    font-family: "Minion";
+    font-family: "Helvetica";
     font-weight: 700;
     font-size: 5rem;
+    color: white;
 }
 
 h2{
-    font-family: "Minion";
+    font-family: "Helvetica";
     font-weight: 700;
     font-size: 4rem;
+    color: white;
 }
+
+h3{
+    color: hsla(0, 0%, 0%, 0.39);
+}
+
 p{
-    font-family: "myriad";
+    font-family: "Roboto";
     font-weight: 100;
     font-size: 1.6em;
+    color: white;
 }
 
 .AC_px10{
@@ -96,4 +104,59 @@ p{
 .AC_navbar.affix{
    transform: translateY(10px);
    top: 0;
+}
+
+.AC_header{
+    height: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+.AC_header-gallaudet{
+    max-height: 100%;
+    display: inline-block !important;
+    z-index: 1;
+    position: relative;
+    max-height: 75px;
+}
+
+.AC_header-gallaudet:hover{
+    -webkit-filter: contrast(1.4);
+}
+
+.AC_header-aslconnect{
+    max-height: 100%;
+    display: inline-block !important;
+    transform: translateX(-10%);
+    position: relative;
+    z-index: 0;
+    max-height: 75px;
+}
+
+.AC_bg-gradient-blue{
+background: linear-gradient(90deg, hsl(216, 59%, 33%), hsl(211, 100%, 53%));
+}
+
+.AC_bg-gradient-orange{
+background: linear-gradient(90deg, hsl(216, 59%, 23%), hsl(211, 100%, 43%));
+}
+
+.AC_bg-gradient-green{
+background: linear-gradient(90deg, hsl(97, 100%, 55%), hsl(152, 97%, 43%));
+}
+
+.AC_category-buttons{
+    border-radius: 2rem;
+}
+
+.AC_icon-search{
+    display: inline-block;
+}
+.AC_icon-search img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.AC_small-icons{
+    max-height: 14vw;
 }

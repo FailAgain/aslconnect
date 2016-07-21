@@ -27,7 +27,6 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="http://www2.gallaudet.edu/site/js/global.jgz"></script>
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
@@ -35,24 +34,29 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="container-fluid">
-        <header class="row header-fixed">
-            <h1 class="AC_text-center">Gallaudet University Header</h1>
+        <header class="row AC_header">
+            <img src="/img/gallaudet-small.svg" class="img-responsive AC_header-gallaudet" alt="logo">
+            <img src="/img/aslconnect.svg" class="img-responsive AC_header-aslconnect" alt="logo">
+            <div class="AC_header-more AC_text-right">
+                <button>Learn Free ASL</button>
+            </div>
         </header>
         <div class="row">
             <div class="AC_home-video">
-                <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_eo70gn8n/uiConfId/35671391" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_83n6kwnr/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
             </div>
-            <div  id="AC_navbar" class="col-md-12">
+        </div>
+        <div class="row">
+            <div id="AC_navbar" class="col-md-12">
                 <nav id="j-AC_nav" class="AC_navbar navbar navbar-default" role="navigation">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                        </button> <a class="navbar-brand" href="#">ASL Connect</a>
+                        </button>
                     </div>
                     <div class="collapse navbar-collapse" id="stickynav">
                         <ul role="tablist" class="nav navbar-nav">
                             <li>
-                                <a href="#aslonline">ASL Online</a>
                             </li>
                             <li>
                                 <a href="#dstonline">DST Online</a>
@@ -99,42 +103,64 @@
                 </nav>
             </div>
         </div>
-        <div id="aslonline" class="row AC_py5">
+        <div class="AC_bg-gradient-blue row AC_py10">
+            <div class="col-md-12 AC_text-center">
+                <h1>Learn ASL for Free</h1>
+                <h3>ASLConnect is the perfect place for you to start learning sign language. It's completely free!</h3>
+                <div class="AC_py5">
+                    <button class="btn btn-lg">Start learning today!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row AC_py5 AC_bg-gradient-blue">
+            <div class="AC_text-center col-md-5 col-md-offset-1 AC_px3">
+                <h2>Word of the Day</h3>
+                <p>Learn a new word everyday through our Facebook or Twitter!</p>
+                <a href="facebook.com"><button class="btn btn-lg">Link to Facebook</button></a>
+                 <a href="facebook.com"><button class="btn btn-lg">Link to Twitter</button></a>
+            </div>
+            <div class="AC_text-center col-md-5 AC_px3">
+                <h2>Weekly Lessons</h3>
+                <p>We give out weekly lessons via email for free!</p>
+                <a href="facebook.com"><button class="btn btn-lg">Sign Up</button></a>
+            </div>
+        </div>
+        <div id="aslonline" class="AC_bg-gradient-green row AC_py5">
             <div class="col-md-8">
                 <div class="AC_home-subvideo">
-                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_eo70gn8n/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_83n6kwnr/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
                 </div>
             </div>
             <div class="col-md-4">
                 <h2>
-                ASL Online
+                Take our online classes and get better at ASL!
             </h2>
                 <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    We offer online learning courses, so you can keep your schedule sane while leanring sign language. Check out our classes below.
                 </p>
                 <h3 class="">
-                About ASL Online Levels
+                ASL Online Levels
             </h3>
-                <div class="btn-group">
+                <div class="btn-group btn-group-lg">
                     <button class="btn btn-default" type="button">
-                        <a href="/individual.html#asl101">Level 1</a>
+                        <a href="/individual.html#asl101">101</a>
                     </button>
                     <button class="btn btn-default" type="button">
-                        Level 2
+                        102
                     </button>
                     <button class="btn btn-default" type="button">
-                        Level 3
+                        211
                     </button>
                     <button class="btn btn-default" type="button">
-                        Level 4
+                        212
                     </button>
                 </div>
             </div>
         </div>
-        <div id="dstonline" class="row AC_py5">
+        <div id="dstonline" class="AC_bg-gradient-green row AC_py5">
             <div class="col-md-8">
                 <div class="AC_home-subvideo">
-                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_eo70gn8n/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_83n6kwnr/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
                 </div>
             </div>
             <div class="col-md-4">
@@ -145,9 +171,9 @@
                     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                 </p>
                 <h3 class="">
-                About the DST Online Courses
+                DST Online Courses
             </h3>
-                <div class="btn-group">
+                <div class="btn-group btn-group-lg">
                     <button class="btn btn-default" type="button">
                         101
                     </button>
@@ -163,19 +189,44 @@
                 </div>
             </div>
         </div>
-        <div class="row AC_py5">
+        <div class="AC_bg-gradient-green row AC_py5">
             <div class="col-md-12 AC_text-center">
-                <h1>Connect to Sign Language.</h1>
-                <p>Pick who you are to access our vast resources, all about Deaf condition, culture and sign language.</p>
+                <h1><div class="AC_px3 AC_icon-search"><img src="/img/search.svg" alt=""></div>Search our Resources</h1>
+                <h3>
+                    Find anything from raising Deaf Children to Free ASL Videos
+                </h3>
+                <div class="col-md-6 col-md-offset-3 AC_py3">
+                    <div class="AC_text-center AC_searchbar input-group-lg input-group AC_py3">
+                        <input type="text" class="form-control" placeholder="Search away...">
+                        <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Search</button>
+                    </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div style="background: url('http://lorempixel.com/100/200'); background-size: cover;" class="col-md-3 AC_home-persona AC_text-center">
+        <div class="AC_bg-gradient-green row AC_py5">
+            <div class="col-sm-3 AC_text-center">
+                <img class="AC_small-icons AC_py3" src="img/icon-video.svg">
+            </div>
+            <div class="col-sm-3 AC_text-center">
+                <img class="AC_small-icons AC_py3" src="img/icon-picture.svg">
+            </div>
+            <div class="col-sm-3 AC_text-center">
+                <img class="AC_small-icons AC_py3" src="img/icon-news.svg">
+            </div>
+            <div class="col-sm-3 AC_text-center">
+                <img class="AC_small-icons AC_py3" src="img/icon-question.svg">
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-md-3 AC_home-persona AC_text-center">
                 <button type="button" class="btn AC_col-centered btn-default">
                     Parent
                 </button>
             </div>
-            <div style="background: url('http://lorempixel.com/500/200'); background-size: cover;" class="col-md-3 AC_home-persona AC_text-center">
+            <div class="col-md-3 AC_home-persona AC_text-center">
                 <button type="button" class="btn AC_col-centered btn-default">
                     Employer
                 </button>
@@ -190,29 +241,36 @@
                     Somebody
                 </button>
             </div>
+        </div>-->
+        <div class="row AC_py5 AC_bg-gradient-green">
+            <div class="col-md-12 AC_text-center">
+                <h1>Know where your ASL is.</h1>
+                <h3>
+                  The only place in the world where you can take a ASL placement test online.
+                </h3>
+            </div>
         </div>
-        <div class="row AC_py5">
-             <div class="col-md-6">
+        <div class="row AC_py5 AC_bg-gradient-green">
+            <div class="col-md-6">
                 <div class="AC_home-subvideo">
-                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_eo70gn8n/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                    <iframe id="kmsembed-1_eo70gn8n" width="100%" height="100%" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_83n6kwnr/uiConfId/33370581" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <h2>ASL Placement Test</h2>
-                  <button type="submit" class="btn btn-default">
-                                Go to ASL Online
-                            </button>
-
-                 <h3><strong>How long is the test?</strong></h3>
+                <h2>Questions about the ASL Placement Test</h2>
+                <h3><strong>How long is the test?</strong></h3>
                 <p>Average test duration is 30 minutes.</p>
-                 <h3><strong>Who is it for?</strong></h3>
+                <h3><strong>Who is it for?</strong></h3>
                 <p>It's for everybody who wants to learn or improve their ASL skills.</p>
-                  <h3><strong>How do I take it?</strong></h3>
+                <h3><strong>How do I take it?</strong></h3>
                 <p>It's completely online! You will need a desktop or a large tablet to take the test.</p>
+                <div class="AC_text-center AC_py5">
+                    <button class="btn btn-lg">Take it today!</button>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="row header-fixed">
+    <footer class="AC_bg-gradient-blue row header-fixed">
         <h1 class="AC_text-center">Footer</h1>
     </footer>
 </body>

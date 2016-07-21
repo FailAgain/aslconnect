@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/FailAgain/aslconnect/issues"
   },
-  "homepage": "https://github.com/FailAgain/aslconnect"
+  "homepage": "https://github.com/FailAgain/aslconnect",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "postcss": "^5.1.0",
+    "autoprefixer": "^6.3.7"
+  }
 }
