@@ -3,15 +3,15 @@ body{
 }
 
 h1{
-    font-family: "Helvetica";
-    font-weight: 700;
+    font-family: "Roboto";
+    font-weight: 100;
     font-size: 5rem;
     color: white;
 }
 
 h2{
-    font-family: "Helvetica";
-    font-weight: 700;
+    font-family: "Roboto";
+    font-weight: 100;
     font-size: 4rem;
     color: white;
 }
@@ -58,7 +58,8 @@ p{
 }
 
 .AC_home-video{
-    height: 80vmin;
+    flex: 1;
+    align-self: stretch;
 }
 
 
@@ -90,7 +91,12 @@ p{
 
 #AC_navbar{
     height: 100%;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    background: none;
+    width: 100%;
+    background: hsla(0, 0%, 0%, 0.27);
 }
 
 .AC_navbar{
@@ -110,6 +116,13 @@ p{
     height: 75px;
     padding: 0;
     margin: 0;
+     position: relative;
+    z-index: 10;
+    background: white;
+}
+
+.AC_navbar-li{
+    padding: 2rem;
 }
 
 .AC_header-gallaudet{
@@ -127,10 +140,8 @@ p{
 .AC_header-aslconnect{
     max-height: 100%;
     display: inline-block !important;
-    transform: translateX(-10%);
-    position: relative;
     z-index: 0;
-    max-height: 75px;
+    height: 70px;
 }
 
 .AC_bg-gradient-blue{
@@ -138,7 +149,7 @@ background: linear-gradient(90deg, hsl(216, 59%, 33%), hsl(211, 100%, 53%));
 }
 
 .AC_bg-gradient-orange{
-background: linear-gradient(90deg, hsl(216, 59%, 23%), hsl(211, 100%, 43%));
+background: linear-gradient(90deg, hsl(22, 93%, 54%), hsl(40, 100%, 50%));
 }
 
 .AC_bg-gradient-green{
@@ -152,11 +163,66 @@ background: linear-gradient(90deg, hsl(97, 100%, 55%), hsl(152, 97%, 43%));
 .AC_icon-search{
     display: inline-block;
 }
+
 .AC_icon-search img{
     height: 3rem;
     width: 3rem;
 }
 
-.AC_small-icons{
+.AC_icons-xsmall{
+    max-height: 7vw;
+}
+
+.AC_icons-small{
     max-height: 14vw;
+}
+
+.AC_fold{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    transform: translateY(-30px);
+}
+.videoWrapper object,
+.videoWrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.AC_home-video video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
