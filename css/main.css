@@ -6,14 +6,14 @@ h1{
     font-family: "Roboto";
     font-weight: 100;
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 h2{
     font-family: "Roboto";
     font-weight: 100;
     font-size: 4rem;
-    color: white;
+    color: black;
 }
 
 h3{
@@ -24,7 +24,7 @@ p{
     font-family: "Roboto";
     font-weight: 100;
     font-size: 1.6em;
-    color: white;
+    color: gray;
 }
 
 .AC_px10{
@@ -112,6 +112,10 @@ p{
    top: 0;
 }
 
+.AC_navbar p{
+    color: white;
+}
+
 .AC_header{
     height: 75px;
     padding: 0;
@@ -142,18 +146,6 @@ p{
     display: inline-block !important;
     z-index: 0;
     height: 70px;
-}
-
-.AC_bg-gradient-blue{
-background: linear-gradient(90deg, hsl(216, 59%, 33%), hsl(211, 100%, 53%));
-}
-
-.AC_bg-gradient-orange{
-background: linear-gradient(90deg, hsl(22, 93%, 54%), hsl(40, 100%, 50%));
-}
-
-.AC_bg-gradient-green{
-background: linear-gradient(90deg, hsl(97, 100%, 55%), hsl(152, 97%, 43%));
 }
 
 .AC_category-buttons{
@@ -226,3 +218,42 @@ background: linear-gradient(90deg, hsl(97, 100%, 55%), hsl(152, 97%, 43%));
     width: 100%;
     height: 100%;
 }
+
+.AC_icons-heading{
+    height: 4rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.AC_icons-heading + .AC_icons-heading{
+    margin-left: -1rem;
+}
+
+.AC_link{
+    border-bottom: 2px solid hsla(210, 100%, 67%,1);
+    display: inline-block;
+    color: hsl(0, 0%, 0%);
+    font-size: 2.5rem;
+    transition: .2s all 0s ease-in-out;
+}
+
+.AC_link:hover{
+    color: hsl(210, 100%, 67%);
+    text-decoration: none;
+    transition: .2s all 0s ease-in-out;
+    transform: translateX(1rem);
+    border-bottom: 2px solid white;
+
+}
+
+.AC_pills>li>a{
+    background: hsla(0, 3%, 82%, 0.29);
+    margin: 0.4rem;
+    font-size: 2rem;
+    color: hsl(0, 0%, 0%);
+}
+
+.AC_pills>li>a:hover{
+    background: hsla(0, 3%, 82%, 0.89);
+}
+
