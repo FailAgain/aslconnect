@@ -1,95 +1,94 @@
-body{
+body {
     position: relative;
 }
 
-h1{
+h1 {
     font-family: "Roboto";
     font-weight: 100;
     font-size: 5rem;
     color: black;
 }
 
-h2{
+h2 {
     font-family: "Roboto";
     font-weight: 100;
     font-size: 4rem;
     color: black;
 }
 
-h3{
+h3 {
     color: hsla(0, 0%, 0%, 0.39);
 }
 
-p{
+p {
     font-family: "Roboto";
     font-weight: 100;
     font-size: 1.6em;
     color: gray;
 }
 
-.AC_px10{
+.AC_px10 {
     padding-right: 10vmin;
     padding-left: 10vmin;
 }
 
-.AC_py10{
+.AC_py10 {
     padding-top: 10vmin;
     padding-bottom: 10vmin;
 }
 
-.AC_px5{
+.AC_px5 {
     padding-right: 5vmin;
     padding-left: 5vmin;
 }
 
-.AC_py5{
+.AC_py5 {
     padding-top: 5vmin;
     padding-bottom: 5vmin;
 }
 
-.AC_px3{
+.AC_px3 {
     padding-right: 3vmin;
     padding-left: 3vmin;
 }
 
-.AC_py3{
+.AC_py3 {
     padding-top: 3vmin;
     padding-bottom: 3vmin;
 }
 
-.AC_home-video{
+.AC_home-video {
     flex: 1;
     align-self: stretch;
 }
 
-
-.AC_home-subvideo{
+.AC_home-subvideo {
     height: 40vmax;
 }
 
-.AC_text-center{
+.AC_text-center {
     text-align: center;
 }
 
-.AC_text-left{
+.AC_text-left {
     text-align: left;
 }
 
-.AC_text-right{
+.AC_text-right {
     text-align: right;
 }
 
-.AC_col-centered{
+.AC_col-centered {
     margin: 0 auto;
 }
 
-.AC_home-persona{
+.AC_home-persona {
     background: gray;
     min-height: 300px;
     padding: 2rem;
 }
 
-#AC_navbar{
+#AC_navbar {
     height: 100%;
     position: absolute;
     bottom: 0;
@@ -99,7 +98,7 @@ p{
     background: hsla(0, 0%, 0%, 0.27);
 }
 
-.AC_navbar{
+.AC_navbar {
     width: 100%;
     transition: .2s all .2s ease-in;
     z-index: 10;
@@ -107,29 +106,29 @@ p{
     border: none;
 }
 
-.AC_navbar.affix{
-   transform: translateY(10px);
-   top: 0;
+.AC_navbar.affix {
+    transform: translateY(10px);
+    top: 0;
 }
 
-.AC_navbar p{
+.AC_navbar p {
     color: white;
 }
 
-.AC_header{
+.AC_header {
     height: 75px;
     padding: 0;
     margin: 0;
-     position: relative;
+    position: relative;
     z-index: 10;
     background: white;
 }
 
-.AC_navbar-li{
+.AC_navbar-li {
     padding: 2rem;
 }
 
-.AC_header-gallaudet{
+.AC_header-gallaudet {
     max-height: 100%;
     display: inline-block !important;
     z-index: 1;
@@ -137,39 +136,39 @@ p{
     max-height: 75px;
 }
 
-.AC_header-gallaudet:hover{
+.AC_header-gallaudet:hover {
     -webkit-filter: contrast(1.4);
 }
 
-.AC_header-aslconnect{
+.AC_header-aslconnect {
     max-height: 100%;
     display: inline-block !important;
     z-index: 0;
     height: 70px;
 }
 
-.AC_category-buttons{
+.AC_category-buttons {
     border-radius: 2rem;
 }
 
-.AC_icon-search{
+.AC_icon-search {
     display: inline-block;
 }
 
-.AC_icon-search img{
+.AC_icon-search img {
     height: 3rem;
     width: 3rem;
 }
 
-.AC_icons-xsmall{
+.AC_icons-xsmall {
     max-height: 7vw;
 }
 
-.AC_icons-small{
+.AC_icons-small {
     max-height: 14vw;
 }
 
-.AC_fold{
+.AC_fold {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -179,11 +178,13 @@ p{
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
     transform: translateY(-30px);
 }
+
 .videoWrapper object,
 .videoWrapper embed {
     position: absolute;
@@ -194,23 +195,25 @@ p{
 }
 
 .AC_home-video video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
 }
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
+
 .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -219,42 +222,70 @@ p{
     height: 100%;
 }
 
-.AC_icons-heading{
+.AC_icons-heading {
     height: 6rem;
     display: inline-block;
     margin-right: 1rem;
     transform: translateY(-1rem);
 }
 
-.AC_icons-heading + .AC_icons-heading{
+.AC_icons-large {
+    height: 19rem;
+    display: inline-block;
+    margin-right: 1rem;
+    transform: translate(-3rem, -1rem);
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+}
+
+.AC_icons-links {
+    height: 4rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.AC_icons-heading + .AC_icons-heading {
     margin-left: -1rem;
 }
 
-.AC_link{
-    border-bottom: 2px solid hsla(210, 100%, 67%,1);
+.AC_link {
     display: inline-block;
     color: hsl(0, 0%, 0%);
     font-size: 2.5rem;
     transition: .2s all 0s ease-in-out;
+    text-decoration: underline;
 }
 
-.AC_link:hover{
-    color: hsl(210, 100%, 67%);
+.AC_link:hover {
     text-decoration: none;
+    color: black;
     transition: .2s all 0s ease-in-out;
     transform: translateX(1rem);
-    border-bottom: 2px solid white;
-
+    background: yellow;
 }
 
-.AC_pills>li>a{
+.AC_pills>li>a {
     background: hsla(0, 3%, 82%, 0.29);
     margin: 0.4rem;
     font-size: 2rem;
     color: hsl(0, 0%, 0%);
+    text-decoration: none;
 }
 
-.AC_pills>li>a:hover{
+.AC_pills>li>a:hover {
     background: hsla(0, 3%, 82%, 0.89);
 }
 
+.AC_pill {
+    background: hsla(0, 3%, 82%, 0.29);
+    margin: 0.4rem;
+    font-size: 2rem;
+    color: hsl(0, 0%, 0%);
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.AC_pill:hover {
+    background: hsla(0, 3%, 82%, 0.89);
+}
