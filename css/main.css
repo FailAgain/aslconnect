@@ -220,9 +220,10 @@ p{
 }
 
 .AC_icons-heading{
-    height: 4rem;
+    height: 6rem;
     display: inline-block;
     margin-right: 1rem;
+    transform: translateY(-1rem);
 }
 
 .AC_icons-heading + .AC_icons-heading{
