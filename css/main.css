@@ -269,6 +269,7 @@ p {
     transition: .2s all 0s ease-in-out;
     transform: translateX(1rem);
     background: yellow;
+	cursor: pointer;
 }
 
 .AC_pills>li>a {
