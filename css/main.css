@@ -219,7 +219,6 @@ p {
     height: 8rem;
     display: inline-block;
     margin-right: 1rem;
-    transform: translateY(-1rem);
 }
 
 .AC_icons-large {
@@ -249,19 +248,27 @@ p {
 }
 
 .AC_link {
+    font-family: "Open Sans";
     display: inline-block;
-    color: hsl(0, 0%, 0%);
-    font-size: 2.5rem;
+    color:  hsl(60, 56%, 91%);
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
     transition: .2s all 0s ease-in-out;
-    text-decoration: underline;
+    text-decoration: none;
+    padding: .4em .6em;
+    border: 4px solid hsl(207, 100%, 24%);
+    border-radius: 4em;
+    margin: 2em;
+    background: hsl(207, 100%, 24%);
+
 }
 
 .AC_link:hover {
     text-decoration: none;
-    color: black;
-    transition: .2s all 0s ease-in-out;
-    transform: translateX(1rem);
-    background: yellow;
+    color: hsl(207, 100%, 24%);
+    border-color: hsl(60, 56%, 91%);
+    background: hsl(60, 56%, 91%);
 }
 
 .AC_pills>li>a {
@@ -291,12 +298,13 @@ p {
 
 .AC_section {
     display: flex;
-    min-height: 60vmin;
+    min-height: 55vmin;
     width: 100%;
     min-width: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 6vmin;
 }
 
 .AC_section-box {
@@ -312,7 +320,7 @@ p {
     bottom: 0;
     background: gray;
     -webkit-filter: saturate(0);
-    opacity: 0.3;
+    opacity: 0.2;
     background-size: cover;
 }
 
@@ -337,5 +345,4 @@ p {
     border-bottom: hsl(60, 56%, 91%) 5px solid;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
-}
 }
