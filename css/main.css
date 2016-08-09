@@ -3,17 +3,17 @@ body {
 }
 
 h1 {
-    font-family: "Roboto";
-    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 5rem;
-    color: black;
+    color: hsl(207, 100%, 24%);
 }
 
 h2 {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 4rem;
-    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: hsl(207, 100%, 24%);
 }
 
 h3 {
@@ -21,7 +21,7 @@ h3 {
 }
 
 p {
-    font-family: "Roboto";
+    font-family: 'Open Sans';
     font-weight: 100;
     font-size: 1.6em;
     color: black;
@@ -128,10 +128,11 @@ p {
     padding: 2rem;
 }
 
-.AC_video-titlebox{
+.AC_video-titlebox {
     position: relative;
 }
-.AC_video-title{
+
+.AC_video-title {
     color: hsl(0, 0%, 100%);
     font-size: 13vw;
     text-shadow: 0px 7px 1rem hsla(0, 0%, 0%, 0.42);
@@ -186,7 +187,6 @@ p {
     position: relative;
 }
 
-
 .AC_home-video video {
     position: fixed;
     top: 50%;
@@ -216,7 +216,7 @@ p {
 }
 
 .AC_icons-heading {
-    height: 6rem;
+    height: 8rem;
     display: inline-block;
     margin-right: 1rem;
     transform: translateY(-1rem);
@@ -233,7 +233,7 @@ p {
     transition: .1s all .1s ease-in;
 }
 
-.AC_icons-large:hover{
+.AC_icons-large:hover {
     opacity: 0;
     transform: translateX(-2rem) scale(1.2);
 }
@@ -287,4 +287,55 @@ p {
 
 .AC_pill:hover {
     background: hsla(0, 3%, 82%, 0.89);
+}
+
+.AC_section {
+    display: flex;
+    min-height: 60vmin;
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.AC_section-box {
+    max-width: 600px;
+}
+
+.AC_section-splash {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background: gray;
+    -webkit-filter: saturate(0);
+    opacity: 0.4;
+    background-size: cover;
+}
+
+.AC_section-splash.right{
+    right: 0;
+}
+
+.AC_section-splash.left{
+    left: 0;
+}
+
+.AC_section-splash.half{
+    width: 50vw;
+}
+
+.AC_section-splash.quarter{
+    width: 75vw;
+}
+
+
+.AC_moreresources{
+    border-bottom: hsl(60, 56%, 91%) 5px solid;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+}
 }
