@@ -128,6 +128,16 @@ p {
     padding: 2rem;
 }
 
+.AC_video-titlebox{
+    position: relative;
+}
+.AC_video-title{
+    color: hsl(0, 0%, 100%);
+    font-size: 13vw;
+    text-shadow: 0px 7px 1rem hsla(0, 0%, 0%, 0.42);
+    font-weight: 100;
+}
+
 .AC_header-gallaudet {
     max-height: 100%;
     display: inline-block !important;
@@ -176,23 +186,6 @@ p {
     position: relative;
 }
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-    transform: translateY(-30px);
-}
-
-.videoWrapper object,
-.videoWrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .AC_home-video video {
     position: fixed;

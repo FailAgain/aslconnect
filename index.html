@@ -39,8 +39,47 @@
             <header class="AC_header">
                 <img src="/img/gallaudet-small.svg" class="img-responsive AC_header-gallaudet" alt="logo">
             </header>
+            <style>
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .videoWrapper iframe,
+            .videoWrapper object,
+            .videoWrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+           .videoWrapper .mwPlayerContainer {
+                width: 150vw !important;
+                height: 100% !important;
+                overflow: hidden !important;
+                left: -25% !important;
+            }
+
+            .videoWrapper{
+                display: flex;
+                height: 100vh;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+            }
+            </style>
             <div class="videoWrapper AC_home-video">
-                <iframe id="kmsembed-1_ycxnnlww" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_ycxnnlww/uiConfId/35671391" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <iframe class="AC_splashvideo" hid="kmsembed-1_ycxnnlww" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_ycxnnlww/uiConfId/35973301" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <div class="AC_video-titlebox">
+                    <h1 class="AC_video-title">
+                        ASLConnect
+                    </h1>
+                </div>
             </div>
             <div id="AC_navbar" class="row">
                 <div class="col-md-12">
