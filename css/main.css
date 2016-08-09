@@ -312,7 +312,7 @@ p {
     bottom: 0;
     background: gray;
     -webkit-filter: saturate(0);
-    opacity: 0.4;
+    opacity: 0.3;
     background-size: cover;
 }
 
