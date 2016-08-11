@@ -3,7 +3,7 @@ body {
     opacity: 0;
 }
 
-body.visible{
+body.visible {
     opacity: 1;
     transition: 1s all ease-out
 }
@@ -95,22 +95,29 @@ p {
     padding: 2rem;
 }
 
-#AC_navbar {
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    background: none;
+.AC_navbar {
+    background: hsla(207, 96%, 20%, 0.82);
+    color: hsl(0, 0%, 100%);
     width: 100%;
-    background: hsla(0, 0%, 0%, 0.27);
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
-.AC_navbar {
-    width: 100%;
-    transition: .2s all .2s ease-in;
-    z-index: 10;
-    background: none;
-    border: none;
+.AC_navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0 5vmin;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+}
+
+.AC_navbar li {
+    font-size: 1rem;
 }
 
 .AC_navbar.affix {
@@ -120,6 +127,7 @@ p {
 
 .AC_navbar p {
     color: white;
+    margin: 0;
 }
 
 .AC_header {
@@ -131,9 +139,6 @@ p {
     background: white;
 }
 
-.AC_navbar-li {
-    padding: 2rem;
-}
 
 .AC_video-titlebox {
     position: relative;
@@ -266,7 +271,7 @@ p {
     padding: .4em .6em;
     border: 4px solid hsl(207, 100%, 24%);
     border-radius: 4em;
-    margin: 2em;
+    margin-top: 2em;
     background: hsl(207, 100%, 24%);
     text-align: center;
 }
@@ -353,6 +358,10 @@ p {
     transform: scale(1.2);
 }
 
+.AC_section:hover .AC_icons-heading {
+    transform: scale(1.2);
+}
+
 .AC_section-welcomebox {
     background: linear-gradient(-0deg, hsla(207, 100%, 24%, 0.8) 55%, hsla(0, 0%, 0%, 0) 100%);
     padding: 3rem;
@@ -361,6 +370,7 @@ p {
     transform: translateY(10vh);
     transition: 1s all cubic-bezier(0.42, 0, 0.35, 0.64);
     opacity: 0;
+    padding-bottom: 120px;
 }
 
 .AC_section-welcome {
@@ -376,7 +386,7 @@ p {
     opacity: 0;
 }
 
-.AC_section-welcome h2{
+.AC_section-welcome h2 {
     color: hsl(0, 0%, 100%);
     font-family: "Open Sans";
     transform: translateY(100%);
@@ -396,6 +406,7 @@ p {
 .AC_section-welcomebox * {
     transition: 0.5s all .75s ease-out;
 }
+
 .AC_section.right .AC_section-splash {
     order: 1;
 }
@@ -420,7 +431,6 @@ p {
     width: 75vw;
 }
 
-
 .AC_moreresources {
     font-family: "open sans";
     letter-spacing: 0em;
@@ -429,7 +439,6 @@ p {
     font-size: 8.7vmin;
     /*color: hsl(60, 51%, 84%);*/
     font-weight: 700;
-
     padding-bottom: 2rem;
     margin-bottom: 4rem;
 }
