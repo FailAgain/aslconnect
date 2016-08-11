@@ -225,6 +225,7 @@ p {
     height: 8rem;
     display: inline-block;
     margin-right: 1rem;
+    -webkit-filter: hue-rotate(7deg) saturate(0.6);
 }
 
 .AC_icons-large {
