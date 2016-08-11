@@ -419,8 +419,16 @@ p {
     width: 75vw;
 }
 
+
 .AC_moreresources {
-    border-bottom: hsl(60, 56%, 91%) 5px solid;
+    font-family: "open sans";
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    /*transform: rotate(70deg);*/
+    font-size: 8.7vmin;
+    /*color: hsl(60, 51%, 84%);*/
+    font-weight: 700;
+
     padding-bottom: 2rem;
     margin-bottom: 4rem;
 }
