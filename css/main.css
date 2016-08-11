@@ -1,5 +1,11 @@
 body {
     position: relative;
+    opacity: 0;
+}
+
+body.visible{
+    opacity: 1;
+    transition: 1s all ease-out
 }
 
 h1 {
@@ -182,8 +188,7 @@ p {
 
 .AC_fold {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
@@ -251,7 +256,7 @@ p {
 .AC_link {
     font-family: "Open Sans";
     display: inline-block;
-    color:  hsl(60, 56%, 91%);
+    color: hsl(60, 56%, 91%);
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -262,7 +267,7 @@ p {
     border-radius: 4em;
     margin: 2em;
     background: hsl(207, 100%, 24%);
-
+    text-align: center;
 }
 
 .AC_link:hover {
@@ -305,47 +310,121 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 6vmin;
+    overflow: hidden;
 }
 
 .AC_section-box {
+    display: flex;
+    /*flex-grow: .2; ADD TO MEDIA QUERY */
+}
+
+.AC_section-textbalancer {
     max-width: 600px;
+    padding: 6vmin;
     position: relative;
     z-index: 1;
 }
 
 .AC_section-splash {
-    height: 100%;
+    min-height: 55vmin;
     flex: 1;
     background: gray;
     -webkit-filter: saturate(0);
     opacity: 0.2;
     background-size: cover;
+    align-self: stretch;
+    transition: .2s all ease-in-out;
 }
 
-.AC_section-splash.right{
-    right: 0;
+.AC_section.left:hover .AC_section-splash {
+    -webkit-filter: saturate(1);
+    transform: translateX(-10%);
+    opacity: 1;
 }
 
-.AC_section-splash.left{
-    left: 0;
+.AC_section.right:hover .AC_section-splash {
+    -webkit-filter: saturate(1);
+    transform: translateX(10%);
+    opacity: 1;
 }
 
-.AC_section-splash.half{
+.AC_section:hover .AC_link {
+    transform: scale(1.2);
+}
+
+.AC_section-welcomebox {
+    background: linear-gradient(-0deg, hsla(207, 100%, 24%, 0.8) 55%, hsla(0, 0%, 0%, 0) 100%);
+    padding: 3rem;
+    align-self: flex-end;
+    width: 100%;
+    transform: translateY(10vh);
+    transition: 1s all cubic-bezier(0.42, 0, 0.35, 0.64);
+    opacity: 0;
+}
+
+.AC_section-welcome {
+    padding: 0;
+}
+
+.AC_section-welcome h1 {
+    font-weight: 700;
+    font-size: 7vmin;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(54, 84%, 86%);
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.AC_section-welcome h2{
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans";
+    transform: translateY(100%);
+    font-size: 6vmin;
+}
+
+.AC_section-welcomebox.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.AC_section-welcomebox.visible * {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.AC_section-welcomebox * {
+    transition: 0.5s all .75s ease-out;
+}
+.AC_section.right .AC_section-splash {
+    order: 1;
+}
+
+.AC_section.left .AC_section-splash {
+    order: 0;
+}
+
+.AC_section.right .AC_section-box {
+    justify-content: flex-end;
+}
+
+.AC_section.left .AC_section-box {
+    justify-content: flex-start;
+}
+
+.AC_section-splash.half {
     width: 55vw;
 }
 
-.AC_section-splash.quarter{
+.AC_section-splash.quarter {
     width: 75vw;
 }
 
-
-.AC_moreresources{
+.AC_moreresources {
     border-bottom: hsl(60, 56%, 91%) 5px solid;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
 }
 
-.AC_section-gradient{
+.AC_section-gradient {
     background: linear-gradient(-180deg, hsl(0, 0%, 89%) 0%, hsl(0, 0%, 100%) 25%)
 }

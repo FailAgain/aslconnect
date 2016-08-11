@@ -27,6 +27,32 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    var $ = jQuery;
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateBody() {
+        $('body').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    $(function() {
+        console.log('script init');
+        window.setTimeout(animateWelcomeBox, 2000);
+
+        animateBody();
+    });
+
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
 </head>
 
@@ -34,11 +60,12 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="container-fluid">
+    <header class="AC_header">
+        <img src="/img/gallaudet-small.svg" class="img-responsive AC_header-gallaudet" alt="logo">
+    </header>
+    <!--     <div class="container-fluid">
         <div class="row AC_fold">
-            <header class="AC_header">
-                <img src="/img/gallaudet-small.svg" class="img-responsive AC_header-gallaudet" alt="logo">
-            </header>
+
             <style>
             .videoWrapper {
                 position: relative;
@@ -118,18 +145,18 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background-size: cover; background: url('img/splashes/welcome.jpg') center no-repeat;">
+        <div id="j-welcome" class="AC_section-welcomebox AC_text-center">
+            <h1>ASLConnect</h1>
+            <h2>Advance your ASL knowledge online</h2>
         </div>
-        <div class="AC_section AC_section-gradient">
-            <div class="AC_section-box AC_text-center ">
-                <h1>Advance your ASL knowledge online</h1>
-                <p>ASLConnect is the perfect place for you to enchance your ASL knowledge and skills.</p>
-            </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/free.png') center no-repeat;">
         </div>
-        <div class="AC_section">
-            <div class="AC_section-splash right half" style="background-size: cover; background: url('img/splashes/free.png') center no-repeat;">
-            </div>
-            <div class="AC_section-box">
-                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-free.svg">
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer"><img aria-hidden="true" class="AC_icons-heading" src="/img/icon-free.svg">
                 <h2>
 
                Learn ASL for Free
@@ -144,10 +171,11 @@
                     </div>-->
             </div>
         </div>
-        <div class="AC_section">
-            <div class="AC_section-splash left half" style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
-            <div class="AC_section-box">
-                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-asl.svg">
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer"><img aria-hidden="true" class="AC_icons-heading" src="/img/icon-asl.svg">
                 <h2>
 
 
@@ -171,14 +199,16 @@
                     </div> -->
                 <div>
                     <a class="AC_link" href="/aslonline.html">
-                            Learn more about ASL Online
+                            Go to ASL Online
                         </a>
                 </div>
             </div>
         </div>
-        <div class="AC_section">
-            <div class="AC_section-splash right half" style="background-size: cover; background: url('img/splashes/deafstudies.png') center no-repeat;"></div>
-            <div class="AC_section-box">
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/deafstudies.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
                 <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-dst.svg">
                 <h2>
 
@@ -206,13 +236,14 @@
                         </ul>
                     </div> -->
                 <a class="AC_link" href="/aslonline.html">
-                        More about Deaf Studies Online
-                    </a>
-            </div>
+                        Go to Deaf Studies Online
+                    </a></div>
         </div>
-        <div class="AC_section">
-            <div class="AC_section-splash left half" style="background-size: cover; background: url('img/splashes/test.jpg') center no-repeat;"></div>
-            <div class="AC_section-box">
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/test.jpg') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
                 <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-test.svg">
                 <h2>
 
@@ -224,70 +255,72 @@
             </div>
         </div>
     </div>
-    <div class="AC_section">
-        <div class="AC_section-splash right half" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
         <div class="AC_section-box">
-            <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-tutor.svg">
-            <h2>
+            <div class="AC_section-textbalancer">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-tutor.svg">
+                <h2>
 
                     ASL Tutoring</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a class="AC_link" href="facebook.com">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a class="AC_link" href="facebook.com">
                        Get a tutor
                     </a>
+            </div>
         </div>
     </div>
-    <div class="AC_section">
-        <div class="AC_section-splash left half" style="background-size: cover; background: url('img/splashes/random.png') center no-repeat;"></div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/random.png') center no-repeat;"></div>
         <div class="AC_section-box">
-            <div><img aria-hidden="true" class="AC_icons-heading" src="img/icon-search.svg">
-            </div>
-            <h2>Search our Resources</h2>
-            <p>
-                Find anything from raising Deaf Children to Free ASL Videos
-            </p>
-            <div class="col-md-6 col-md-offset-3 AC_py3">
+            <div class="AC_section-textbalancer">
+                <div><img aria-hidden="true" class="AC_icons-heading" src="img/icon-search.svg">
+                </div>
+                <h2>Search our Resources</h2>
+                <p>
+                    Find anything from raising Deaf Children to Free ASL Videos
+                </p>
                 <div class="AC_text-center AC_searchbar input-group-lg input-group">
                     <input type="text" class="form-control" placeholder="Search away...">
                     <span class="input-group-btn">
                     <button class="btn btn-default" type="button">Search</button>
                     </span>
                 </div>
-                <!-- /input-group -->
             </div>
         </div>
     </div>
     <div class="container-fluid">
-    <div class="row AC_py3 AC_px10 AC_section-gradient">
-        <div class="col-sm-12 AC_text-center">
-            <h2 class="AC_moreresources">Even more resources</h2>
-        </div>
-        <div class=" col-md-6 AC_px3">
-            <h3><img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg">Clerc Center</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a class="AC_link" href="facebook.com">
+        <div class="row AC_py3 AC_px10 AC_section-gradient">
+            <div class="col-sm-12 AC_text-center">
+                <h2 class="AC_moreresources">Even more resources</h2>
+            </div>
+            <div class=" col-md-6 AC_px3">
+                <h3><img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg">Clerc Center</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a class="AC_link" href="facebook.com">
                        Go to Clerc Center
                     </a>
-        </div>
-        <div class=" col-md-6 AC_px3">
-            <h3>
+            </div>
+            <div class=" col-md-6 AC_px3">
+                <h3>
                     <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-vl2.png">Visual Language Visual Learning</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a class="AC_link" href="facebook.com">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a class="AC_link" href="facebook.com">
                        Go to VL2
                     </a>
-        </div>
-        <div class="col-md-6 AC_px3 AC_py3">
-            <h3>
+            </div>
+            <div class="col-md-6 AC_px3 AC_py3">
+                <h3>
                     <img aria-hidden="true" class="AC_icons-heading" src="/img/inkandsalt.png">Ink and Salt</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a class="AC_link" href="facebook.com">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a class="AC_link" href="facebook.com">
                        Go to Ink and Salt
                     </a>
+            </div>
         </div>
-    </div>
-    <!--<div class="row">
+        <!--<div class="row">
             <div class="col-md-3 AC_home-persona AC_text-center">
                 <button type="button" class="btn AC_col-centered btn-default">
                     Parent
