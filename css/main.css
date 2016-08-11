@@ -315,18 +315,13 @@ p {
 }
 
 .AC_section-splash {
-    width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    bottom: 0;
+    flex: 1;
     background: gray;
     -webkit-filter: saturate(0);
     opacity: 0.2;
     background-size: cover;
 }
-
 
 .AC_section-splash.right{
     right: 0;
