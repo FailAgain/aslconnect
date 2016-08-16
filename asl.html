@@ -27,20 +27,85 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script>
+    var $ = jQuery;
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateBody() {
+        $('body').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    $(function() {
+        console.log('script init');
+        window.setTimeout(animateWelcomeBox, 2000);
+
+        animateBody();
+    });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="container-fluid">
+    <header class="AC_header">
+        <img src="/img/gallaudet-header.png" class="img-responsive AC_header-gallaudet" alt="logo">
+    </header>
+    <!--     <div class="container-fluid">
         <div class="row AC_fold">
-            <header class="AC_header">
-                <img src="/img/gallaudet-small.svg" class="img-responsive AC_header-gallaudet" alt="logo">
-            </header>
+
+            <style>
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .videoWrapper iframe,
+            .videoWrapper object,
+            .videoWrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoWrapper .mwPlayerContainer {
+                width: 150vw !important;
+                height: 100% !important;
+                overflow: hidden !important;
+                left: -25% !important;
+            }
+
+            .videoWrapper {
+                display: flex;
+                height: 100vh;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+            }
+            </style>
             <div class="videoWrapper AC_home-video">
-              <iframe id="kmsembed-1_6o9ob0nk" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_6o9ob0nk/uiConfId/35671391" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <iframe class="AC_splashvideo" hid="kmsembed-1_ycxnnlww" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_ycxnnlww/uiConfId/35973301" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <div class="AC_video-titlebox">
+                    <h1 class="AC_video-title">
+                        ASLConnect
+                    </h1>
+                </div>
             </div>
             <div id="AC_navbar" class="row">
                 <div class="col-md-12">
@@ -57,7 +122,7 @@
                                     <p>Get ASL for Free</p>
                                 </li>
                                 <li class="AC_navbar-li AC_px3">
-                                    <p><strong>ASL Online</strong></p>
+                                    <p>ASL Online</p>
                                 </li>
                                 <li class="AC_navbar-li AC_px3">
                                     <p>Deaf Studies Online</p>
@@ -79,178 +144,191 @@
                     </div>
                 </div>
             </div>
-            <div class="row AC_py5">
-                <div class="col-md-8 col-md-offset-2 AC_text-center">
-                    <h1>ASL Online</h1>
-                    <h3>We offer you many opportunities to learn ASL from wherever you are. Take our placement test to know where you can start today.</h3>
-                </div>
-            </div>
-            <div class="row AC_px5 AC_py5">
-                <div class=" col-md-6">
-                    <h2>    <img aria-hidden="true" class="AC_icons-large" src="/img/asl-level-1.svg">
+        </div> -->
+    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background-size: cover; background: url('img/splashes/welcome.jpg') center no-repeat;">
+        <div id="j-welcome" class="AC_section-welcomebox AC_text-center">
+            <h1>ASL Online</h1>
+            <h2>Learn how to sign online</h2>
 
-
-              ASL Level 1
-            </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div>
-                        <ul class="AC_pills AC_py3 nav nav-pills">
-                            <h3>We will cover:</h3>
-                            <li class="AC_pill">Introduction to Sign Language</li>
-                            <li class="AC_pill">ABCs</li>
-                            <li class="AC_pill">Daily Signs</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h2>    <img aria-hidden="true" class="AC_icons-large" src="/img/asl-level-2.svg">
-
-
-               ASL Level 2
-            </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        <div>
-                            <ul class="AC_pills AC_py3 nav nav-pills">
-                                <h3>We will cover:</h3>
-                                <li class="AC_pill">Terminology</li>
-                                <li class="AC_pill">Vocabulary & Spelling</li>
-                                <li class="AC_pill">Gestures</li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-            <div class="row AC_px3 AC_py5">
-                <div class="col-md-6">
-                    <h2>    <img aria-hidden="true" class="AC_icons-large" src="/img/asl-level-3.svg">
-
-
-               ASL Level 3
-            </h2>
-                    <p>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    </p>
-                    <div>
-                        <ul class="AC_pills AC_py3 nav nav-pills">
-                            <h3>We will cover:</h3>
-                            <li class="AC_pill">Classifers</li>
-                            <li class="AC_pill">Intro to Lexcialized Spelling</li>
-                            <li class="AC_pill">Improvement in Some Areas</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h2>    <img aria-hidden="true" class="AC_icons-large" src="/img/asl-level-4.svg">
-
-                    ASL Level 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    <div>
-                        <ul class="AC_pills AC_py3 nav nav-pills">
-                            <h3>We will cover:</h3>
-                            <li class="AC_pill">Conversational ASL</li>
-                            <li class="AC_pill">ASL Register</li>
-                            <li class="AC_pill">Tips on Contextual Understanding</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row AC_py5">
-                <div class="col-md-8 col-md-offset-2 AC_text-center">
-                    <h1>Start your ASL journey with us!</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut.
-</h3>
-                    <ul class="AC_text-center AC_pills AC_py3 nav nav-pills">
-                        <li class="">
-                            <a class="AC_link"><img aria-hidden="true" class="AC_icons-links" src="/img/icon-signschool.png">Start Learning for free today!</a>
-                        </li>
-                        <li class="">
-                            <a class="AC_link"><img aria-hidden="true" class="AC_icons-links" src="/img/icon-asl.svg">Sign up for ASL Online</a>
-                        </li>
-                        <li class="">
-                            <a class="AC_link"><img aria-hidden="true" class="AC_icons-links" src="/img/icon-test.svg">Ask us questions!</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row AC_px3 AC_py5">
-                <div class="col-md-6 col-sm-12">
-                    <h2>    <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-tutor.svg">
-
-                    Need more than a class?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a class="AC_link" href="facebook.com">
-                       Get a tutor >
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h2>    <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-test.svg">
-
-                   Took ASL before?</h2>
-                    <p>Our online ASL Placement test is built in the class fees. We will be able to place you in the right ASL level with the results from your test. Most of our students are very happy with their placement.
-                    </p>
-                    <a class="AC_link" href="facebook.com">
-                      Ask more about the test >
-                    </a>
-                </div>
-            </div>
-            <div class="row AC_py3 AC_px10">
-                <div class="col-sm-12 AC_text-center">
-                    <h2>Even more resources</h2>
-                </div>
-                <div class=" col-md-6 AC_px3">
-                    <h3><img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg">Clerc Center</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a class="AC_link" href="facebook.com">
-                       Go to Clerc Center >
-                    </a>
-                </div>
-                <div class=" col-md-6 AC_px3">
-                    <h3>
-                    <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-vl2.png">Visual Language Visual Learning</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a class="AC_link" href="facebook.com">
-                       Go to VL2 >
-                    </a>
-                </div>
-                <div class="col-md-6 AC_px3 AC_py3">
-                    <h3>
-                    <img aria-hidden="true" class="AC_icons-heading" src="/img/inkandsalt.png">Ink and Salt</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a class="AC_link" href="facebook.com">
-                       Go to Ink and Salt >
-                    </a>
-                </div>
-            </div>
-            <!--<div class="row">
-            <div class="col-md-3 AC_home-persona AC_text-center">
-                <button type="button" class="btn AC_col-centered btn-default">
-                    Parent
-                </button>
-            </div>
-            <div class="col-md-3 AC_home-persona AC_text-center">
-                <button type="button" class="btn AC_col-centered btn-default">
-                    Employer
-                </button>
-            </div>
-            <div style="background: url('http://lorempixel.com/600/200'); background-size: cover;" class="col-md-3 AC_home-persona AC_text-center">
-                <button type="button" class="btn AC_col-centered btn-default">
-                    ASL Teacher
-                </button>
-            </div>
-            <div style="background: url('http://lorempixel.com/200/200'); background-size: cover;" class="col-md-3 AC_home-persona AC_text-center">
-                <button type="button" class="btn AC_col-centered btn-default">
-                    Somebody
-                </button>
-            </div>
-        </div>-->
         </div>
-        <footer class=" row header-fixed">
-            <h1 class="AC_text-center">Footer</h1>
-        </footer>
+        <div class="AC_navbar">
+            <img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg">
+            <ul>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Get ASL for Free</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>ASL Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Deaf Studies Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Tutoring</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Placement Test</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/free.png') center no-repeat;">
+        </div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+               Start signing online
+            </h2>
+
+                <!-- <div>
+                        <a class="AC_link">Go to Sign School</a>
+                        <a class="AC_link">Learn Words Daily ></a>
+                        <a class="AC_link">Subscribe ></a>
+                    </div>-->
+                      <a class="AC_link" href="/basic.html">
+                            Register now
+                        </a>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+                ASL 1
+            </h2>
+                <p>
+                    We offer online learning courses, so you can keep your schedule sane while leanring sign language. Check out our classes below.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li class="">
+                                <a href="">ASL 1</a>
+                            </li>
+                            <li class="">
+                                <a href="">ASL 2</a></li>
+                            <li class="">
+                                <a href="">ASL 3</a></li>
+                            <li class="">
+                                <a href="">ASL 4</a></li>
+                        </ul>
+                    </div> -->
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/deafstudies.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+
+                <h2>
+
+
+                ASL 2
+            </h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li><a href="">
+                                Introduction to Deaf Studies
+                            </a></li>
+                            <li><a href="">
+                                Introduction to Cultural Studies</a></li>
+                            <li><a href="">
+                                Deaf Culture</a></li>
+                            <li><a href="">
+                                Oral Traditions in the Deaf Community </a></li>
+                            <li><a href="">
+                                Dynamics of Oppression</a></li>
+                            <li><a href="">
+                                Disability Studies</a></li>
+                        </ul>
+                    </div> -->
+                    </div>
+        </div>
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/test.jpg') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+                    ASL 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+                    ASL 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+     <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/free.png') center no-repeat;">
+        </div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+               Register today!
+            </h2>
+
+                <!-- <div>
+                        <a class="AC_link">Go to Sign School</a>
+                        <a class="AC_link">Learn Words Daily ></a>
+                        <a class="AC_link">Subscribe ></a>
+                    </div>-->
+                      <a class="AC_link" href="/basic.html">
+                           Start applying
+                        </a>
+            </div>
+        </div>
+    </div>
+    <div class=" AC_section-more container-fluid">
+        <div class="row AC_py3 AC_px10">
+            <div class="col-sm-12">
+                <h2>You might like:</h2>
+            </div>
+            <div class="AC_section-morecard col-md-4 AC_px3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg">
+                <h3>National Deaf Education Center</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class=" AC_section-morecard col-md-4 AC_px3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-vl2.png">
+                <h3>
+                    Visual Language Visual Learning</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="AC_section-morecard col-md-4 AC_px3 AC_py3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/inkandsalt.png">
+                <h3>
+                    Ink and Salt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="AC_footer">
+        <img src="/img/gallaudet-footer.png" class="img-responsive" alt="logo">
+    </footer>
+    <footer class=" row header-fixed">
+        <h1 class="AC_text-center">Footer</h1>
+    </footer>
 </body>
 
 </html>

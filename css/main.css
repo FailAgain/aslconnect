@@ -120,6 +120,11 @@ p {
     font-size: 1rem;
 }
 
+.AC_navbar li:hover {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .AC_navbar.affix {
     transform: translateY(10px);
     top: 0;
@@ -131,7 +136,6 @@ p {
 }
 
 .AC_header {
-    height: 75px;
     padding: 0;
     margin: 0;
     position: relative;
@@ -139,6 +143,14 @@ p {
     background: white;
 }
 
+.AC_footer {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    background: white;
+}
 
 .AC_video-titlebox {
     position: relative;
@@ -191,12 +203,6 @@ p {
     max-height: 14vw;
 }
 
-.AC_fold {
-    display: flex;
-    height: 90vh;
-    overflow: hidden;
-    position: relative;
-}
 
 .AC_home-video video {
     position: fixed;
@@ -373,6 +379,10 @@ p {
     padding-bottom: 120px;
 }
 
+.AC_section-welcomeboxhome {
+    padding-bottom: 40vh;
+}
+
 .AC_section-welcome {
     padding: 0;
 }
@@ -431,18 +441,67 @@ p {
     width: 75vw;
 }
 
-.AC_moreresources {
+.AC_section-more{
+    /*background: beige;*/
+        background: linear-gradient(0deg, hsl(0, 0%, 100%) 12%, hsl(60, 56%, 91%) 40%);
+
+}
+
+.AC_section-morecard {
+    background: hsl(0, 0%, 100%);
+    padding: 4rem;
+    border: 1vw hsl(60, 56%, 91%) solid;
+    transition: .1s all ease-in;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.AC_section-morecard:hover{
+    transform: scale(0.9);
+    border-color: hsl(207, 100%, 24%);
+}
+
+.AC_section-more h2 {
     font-family: "open sans";
     letter-spacing: 0em;
     text-transform: uppercase;
     /*transform: rotate(70deg);*/
     font-size: 8.7vmin;
     /*color: hsl(60, 51%, 84%);*/
-    font-weight: 700;
+    font-weight: 100;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .AC_section-gradient {
     background: linear-gradient(-180deg, hsl(0, 0%, 89%) 0%, hsl(0, 0%, 100%) 25%)
 }
+
+.AC_subtitle {
+    font-size: 2.6em;
+    font-family: "Open Sans";
+    font-weight: 500;
+    padding-bottom: 0.6em;
+}
+
+.AC_section-morecard img{
+    margin: 0 auto;
+}
+
+
+.AC_fold {
+    display: flex;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.AC_fold-home {
+    min-height: 90vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
