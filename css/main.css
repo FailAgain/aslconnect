@@ -116,13 +116,9 @@ p {
     margin: 0;
 }
 
-.AC_navbar li {
-    font-size: 1rem;
-}
-
 .AC_navbar li:hover {
     font-size: 1rem;
-    font-weight: bold;
+
 }
 
 .AC_navbar.affix {
@@ -130,9 +126,18 @@ p {
     top: 0;
 }
 
-.AC_navbar p {
+.AC_navbar-li a{
     color: white;
     margin: 0;
+    font-size: 1rem;
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+.AC_navbar-li:hover a {
+    transform: scale(1.2);
+    text-decoration: none;
 }
 
 .AC_header {
@@ -202,7 +207,6 @@ p {
 .AC_icons-small {
     max-height: 14vw;
 }
-
 
 .AC_home-video video {
     position: fixed;
@@ -441,10 +445,9 @@ p {
     width: 75vw;
 }
 
-.AC_section-more{
+.AC_section-more {
     background: beige;
-        /*background: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(60, 56%, 91%) 12%);*/
-
+    /*background: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(60, 56%, 91%) 12%);*/
 }
 
 .AC_section-morecard {
@@ -457,7 +460,7 @@ p {
     text-align: center;
 }
 
-.AC_section-morecard:hover{
+.AC_section-morecard:hover {
     transform: scale(0.9);
     border-color: hsl(207, 100%, 24%);
     -webkit-filter: contrast(0.8);
@@ -487,10 +490,9 @@ p {
     padding-bottom: 0.6em;
 }
 
-.AC_section-morecard img{
+.AC_section-morecard img {
     margin: 0 auto;
 }
-
 
 .AC_fold {
     display: flex;
@@ -505,4 +507,3 @@ p {
     overflow: hidden;
     position: relative;
 }
-
