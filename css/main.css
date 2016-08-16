@@ -442,8 +442,8 @@ p {
 }
 
 .AC_section-more{
-    /*background: beige;*/
-        background: linear-gradient(0deg, hsl(0, 0%, 100%) 12%, hsl(60, 56%, 91%) 40%);
+    background: beige;
+        /*background: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(60, 56%, 91%) 12%);*/
 
 }
 
@@ -460,6 +460,7 @@ p {
 .AC_section-morecard:hover{
     transform: scale(0.9);
     border-color: hsl(207, 100%, 24%);
+    -webkit-filter: contrast(0.8);
 }
 
 .AC_section-more h2 {
