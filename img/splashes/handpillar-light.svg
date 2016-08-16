@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="3612px" height="1323px" viewBox="0 0 3612 1323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FE" offset="47.5247532%"></stop>
+            <stop stop-color="#B4ED50" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-5" sketch:type="MSShapeGroup" x="0" y="0" width="3612" height="1323"></rect>
+        <path d="M2233,575.017945 L2415.5,877.002059 C2415.5,877.002059 2381.15823,283.718364 2632.5,285.00208 C2883.84177,286.285796 2707.5,547.502075 2632.5,877.00208 C2557.5,1206.50209 3032,1323.0084 3032,1323.0084 L2233,1323.0084 L2233,575.017945 Z" id="Rectangle-1-Copy-9" opacity="0.161672108" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+        <path d="M1440,674.967896 C1440,674.967896 1535.46211,792.966153 1554,840.427979 C1592.70042,939.511144 1514.5,1116.92798 1514.5,1116.92798 C1514.5,1116.92798 1614.79811,1052.82534 1776.5,980.927979 C1786.63237,976.422833 1915.24093,915.576744 1856.5,780.927958 C1738.2744,509.925528 1450,118.427974 1597.5,35.9279744 C1745,-46.5720256 1969.5,462.42798 2118,749.427991 C2266.5,1036.428 2239,876.927979 2151,728.927958 C1990.01227,458.175837 1805.98438,98.2363757 1918,53.9279742 C2143,-35.0720276 2239,405.427974 2239,405.427974 L2239,1322.93578 L1440,1322.93578 L1440,674.967896 Z" id="Rectangle-1-Copy-10" opacity="0.161672108" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+        <path d="M818.714912,1114.88423 C818.714912,1114.88423 529.5,266.281354 796.5,349.781364 C1063.5,433.281374 882,839.281343 1046.5,877.281343 C1211,915.281343 1013.48438,604.089745 1125.5,559.781343 C1350.5,470.781342 1446,573.781357 1446,573.781357 L1446,1323.21714 L647,1323.21714 L818.714912,1114.88423 Z" id="Rectangle-1-Copy-11" opacity="0.161672108" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

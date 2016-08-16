@@ -1,0 +1,287 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gallaudet University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- Bootstrap required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link href="http://www2.gallaudet.edu/site/bootstrap/css/bootstrap.min.csgz" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Our CSS -->
+    <!--<link href="http://www2.gallaudet.edu/site/css/screen.csgz" rel="stylesheet">-->
+    <link href="css/homepage.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="shortcut icon">
+    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="icon">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    var $ = jQuery;
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateBody() {
+        $('body').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    $(function() {
+        console.log('script init');
+        window.setTimeout(animateWelcomeBox, 2000);
+
+        animateBody();
+    });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#AC_navbar">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="AC_header">
+        <img src="/img/gallaudet-header.png" class="img-responsive" alt="logo">
+    </header>
+    <!--     <div class="container-fluid">
+        <div class="row AC_fold">
+
+            <style>
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .videoWrapper iframe,
+            .videoWrapper object,
+            .videoWrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoWrapper .mwPlayerContainer {
+                width: 150vw !important;
+                height: 100% !important;
+                overflow: hidden !important;
+                left: -25% !important;
+            }
+
+            .videoWrapper {
+                display: flex;
+                height: 100vh;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+            }
+            </style>
+            <div class="videoWrapper AC_home-video">
+                <iframe class="AC_splashvideo" hid="kmsembed-1_ycxnnlww" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_ycxnnlww/uiConfId/35973301" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <div class="AC_video-titlebox">
+                    <h1 class="AC_video-title">
+                        ASLConnect
+                    </h1>
+                </div>
+            </div>
+            <div id="AC_navbar" class="row">
+                <div class="col-md-12">
+                    <nav id="j-AC_nav" class="AC_navbar navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg">
+                        </div>
+                        <div class="collapse navbar-collapse" id="stickynav">
+                            <ul role="tablist" class="nav navbar-nav">
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Get ASL for Free</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>ASL Online</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Deaf Studies Online</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Tutoring</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Placement Test</p>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-right">
+                                <li>
+                                    <div class="AC_navbar-li AC_px3 AC_icon-search"><img src="/img/search.svg" alt="">
+                                </li>
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background-size: cover; background: url('img/splashes/welcome.jpg') center no-repeat;">
+        <div id="j-welcome" class="AC_section-welcomebox AC_text-center">
+            <h1>ASL Placement Test</h1>
+            <h2>Measure ASL Skills Online</h2>
+        </div>
+        <div class="AC_navbar">
+            <img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg">
+            <ul>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Get ASL for Free</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>ASL Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Deaf Studies Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Tutoring</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Placement Test</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="AC_section left">
+
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-test.svg">
+                <h2>
+             Need to take the test?
+            </h2>
+                <!-- <div>
+                        <a class="AC_link">Go to Sign School</a>
+                        <a class="AC_link">Learn Words Daily ></a>
+                        <a class="AC_link">Subscribe ></a>
+                    </div>-->
+                <a class="AC_link" href="/basic.html">
+                            Take it here
+                        </a>
+            </div>
+            <div class="AC_section-textbalancer">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-attachment.svg">
+                <h2>
+
+                Test Guide
+            </h2>
+                <p>
+                    Download our guide so you can meet all the steps in order to take the test.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li class="">
+                                <a href="">ASL 1</a>
+                            </li>
+                            <li class="">
+                                <a href="">ASL 2</a></li>
+                            <li class="">
+                                <a href="">ASL 3</a></li>
+                            <li class="">
+                                <a href="">ASL 4</a></li>
+                        </ul>
+                    </div> -->
+                <a class="AC_link" href="/basic.html">
+                            Download PDF
+                        </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+                Want to provide this test?
+            </h2>
+                <p>
+                   Are you a college ASL department? An ASL organization? To preserve the integrity of our test, we provide it only through official programs. Our test is not for individual partaking.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li class="">
+                                <a href="">ASL 1</a>
+                            </li>
+                            <li class="">
+                                <a href="">ASL 2</a></li>
+                            <li class="">
+                                <a href="">ASL 3</a></li>
+                            <li class="">
+                                <a href="">ASL 4</a></li>
+                        </ul>
+                    </div> -->
+                <div><a class="AC_link" href="mailto:sethjgore@gmail.com&subject:ASLPlacement">
+                           Contact Us to Get Started</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-login.svg">
+
+                <h2>
+
+
+               Vendor Login
+            </h2>
+                <p>
+                  Need access to your data and results?
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li class="">
+                                <a href="">ASL 1</a>
+                            </li>
+                            <li class="">
+                                <a href="">ASL 2</a></li>
+                            <li class="">
+                                <a href="">ASL 3</a></li>
+                            <li class="">
+                                <a href="">ASL 4</a></li>
+                        </ul>
+                    </div> -->
+                <div><a class="AC_link" href="mailto:sethjgore@gmail.com&subject:ASLPlacement">
+                          Login</a></div>
+            </div>
+        </div>
+    </div>
+    <footer class="AC_footer">
+        <img src="/img/gallaudet-footer.png" class="img-responsive" alt="logo">
+    </footer>
+</body>
+
+</html>

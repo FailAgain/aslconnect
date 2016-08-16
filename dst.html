@@ -1,0 +1,383 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gallaudet University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- Bootstrap required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link href="http://www2.gallaudet.edu/site/bootstrap/css/bootstrap.min.csgz" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Our CSS -->
+    <!--<link href="http://www2.gallaudet.edu/site/css/screen.csgz" rel="stylesheet">-->
+    <link href="css/homepage.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="shortcut icon">
+    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="icon">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    var $ = jQuery;
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateBody() {
+        $('body').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    function animateWelcomeBox() {
+        $('#j-welcome').addClass('visible');
+        console.log('animating welcome box');
+    }
+
+    $(function() {
+        console.log('script init');
+        window.setTimeout(animateWelcomeBox, 2000);
+
+        animateBody();
+    });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#AC_navbar">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="AC_header">
+        <img src="/img/gallaudet-header.png" class="img-responsive AC_header-gallaudet" alt="logo">
+    </header>
+    <!--     <div class="container-fluid">
+        <div class="row AC_fold">
+
+            <style>
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .videoWrapper iframe,
+            .videoWrapper object,
+            .videoWrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoWrapper .mwPlayerContainer {
+                width: 150vw !important;
+                height: 100% !important;
+                overflow: hidden !important;
+                left: -25% !important;
+            }
+
+            .videoWrapper {
+                display: flex;
+                height: 100vh;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+            }
+            </style>
+            <div class="videoWrapper AC_home-video">
+                <iframe class="AC_splashvideo" hid="kmsembed-1_ycxnnlww" width="480" height="270" src="https://media.gallaudet.edu/embed/secure/iframe/entryId/1_ycxnnlww/uiConfId/35973301" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+                <div class="AC_video-titlebox">
+                    <h1 class="AC_video-title">
+                        ASLConnect
+                    </h1>
+                </div>
+            </div>
+            <div id="AC_navbar" class="row">
+                <div class="col-md-12">
+                    <nav id="j-AC_nav" class="AC_navbar navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg">
+                        </div>
+                        <div class="collapse navbar-collapse" id="stickynav">
+                            <ul role="tablist" class="nav navbar-nav">
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Get ASL for Free</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>ASL Online</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Deaf Studies Online</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Tutoring</p>
+                                </li>
+                                <li class="AC_navbar-li AC_px3">
+                                    <p>Placement Test</p>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-right">
+                                <li>
+                                    <div class="AC_navbar-li AC_px3 AC_icon-search"><img src="/img/search.svg" alt="">
+                                </li>
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background-size: cover; background: url('img/splashes/welcome.jpg') center no-repeat;">
+        <div id="j-welcome" class="AC_section-welcomebox AC_text-center">
+            <h1>Deaf Studies</h1>
+            <h2>Know the Culture behind the Language</h2>
+        </div>
+        <div class="AC_navbar">
+            <img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg">
+            <ul>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Get ASL for Free</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>ASL Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Deaf Studies Online</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Tutoring</p>
+                </li>
+                <li class="AC_navbar-li AC_px3">
+                    <p>Placement Test</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/free.png') center no-repeat;">
+        </div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+              Continue your Deaf Studies journey online
+            </h2>
+                <!-- <div>
+                        <a class="AC_link">Go to Sign School</a>
+                        <a class="AC_link">Learn Words Daily ></a>
+                        <a class="AC_link">Subscribe ></a>
+                    </div>-->
+                <a class="AC_link" href="/basic.html">
+                            Register now
+                        </a>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/asl.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+                DST 101
+            </h2><h3 class="AC_subtitle">
+                Introduction to Deaf Studies (3)
+            </h3>
+                <p>
+                    This is an introductory survey to the field of Deaf Studies that highlights cutting edge concepts and theories at use in this field. The course will show how deaf people and sign languages are integral aspects of human diversity and how societies have responded to this diversity across different social, temporal, and cultural moments and movements. 3 credits. PST 210.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li class="">
+                                <a href="">ASL 1</a>
+                            </li>
+                            <li class="">
+                                <a href="">ASL 2</a></li>
+                            <li class="">
+                                <a href="">ASL 3</a></li>
+                            <li class="">
+                                <a href="">ASL 4</a></li>
+                        </ul>
+                    </div> -->
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/deafstudies.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+                 DST 203
+            </h2><h3 class="AC_subtitle">
+                Introduction to Cultural Studies (3)
+            </h3>
+                <p>
+                    This course investigates how culture shapes the way people see the world. Students will explore cultural readings and examine various texts around us to understand how culture, identity and history frame experiences. Traditional courses in cultural studies assume that the meanings in this world are central in creating us -- individually and collectively. Students will examine how culture transmits a view of the world and power through critical analysis. PST 213.
+                </p>
+                <!--  <div>
+                        <ul class="AC_pills AC_py3 nav nav-pills">
+                            <li><a href="">
+                                Introduction to Deaf Studies
+                            </a></li>
+                            <li><a href="">
+                                Introduction to Cultural Studies</a></li>
+                            <li><a href="">
+                                Deaf Culture</a></li>
+                            <li><a href="">
+                                Oral Traditions in the Deaf Community </a></li>
+                            <li><a href="">
+                                Dynamics of Oppression</a></li>
+                            <li><a href="">
+                                Disability Studies</a></li>
+                        </ul>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash " style="background-size: cover; background: url('img/splashes/test.jpg') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+                  DST 204</h2><h3 class="AC_subtitle">
+                      Deaf Culture (3)
+                  </h3>
+                <p>
+                    This course will begin with a macroscopic view of culture, and then will focus on the microscopic view of the Deaf experience. Multi-disciplinary approaches --- sociological, educational, linguistic, psychological and humanistic -- will be taken to study important persons, historical events and diversity within the global Deaf community. PST 212.
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+DST 311 </h2><h3 class="AC_subtitle">
+    Dynamics of Oppression (3)
+</h3>
+                <p>
+                    This course examines various forms of oppression by looking across different cultures and communities, then examines possible parallels occurring within the deaf community. PST 202.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section left">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+
+DST 314</h2><h3 class="AC_subtitle">
+    Oral Traditions in the Deaf Community (3)
+</h3><p>
+
+The dynamics of oral cultures and their traditions will be introduced in this course by studying the development of oral literature and literary artists in other cultures. Then using this as background, attempts will be made to study ASL literary tradition by looking at life histories, narratives, and poetry performances. PST 203.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/tutor.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+DST 316
+</h2><h3 class="AC_subtitle">
+    Disability Studies (3)
+</h3><p>
+
+This course will introduce students to the field of Disability Studies. As an emerging interdisciplinary field of study, Disability Studies does not approach disability as a "medical condition, but as a human condition" (Charlton). Instead of studying the causes and rehabilitation of persons with disabilities, we will explore the historical, social, political, religious, philosophical, and cultural influences that "construct" the category of "disability." We will also examine how persons with disabilities construct their own meanings and identities. PST 260.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="AC_section left">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/random.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+DST 402
+</h2><h3 class="AC_subtitle">
+    Deaf Women's Studies (3)
+</h3><p>
+This course will explore how the field of women's studies came into being by way of the 1848 Seneca Falls Convention. Issues faced by both hearing and deaf women will be investigated: career, educational opportunities, reproduction, and patriarchy, among others. PST 222.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="AC_section right">
+        <div class="AC_section-splash" style="background-size: cover; background: url('img/splashes/random.png') center no-repeat;"></div>
+        <div class="AC_section-box">
+            <div class="AC_section-textbalancer">
+                <h2>
+
+
+DST 410 </h2><h3 class="AC_subtitle"> Multicultural Deaf Lives (Topic to be specified) (3)
+</h3><p>
+This course will focus on cultural issues, values, behaviors, identities and language of Deaf people from diverse ethnic and racial backgrounds. Students will examine autobiographies, documentaries, films, videos, and academic literature to help understand the contributions and historical development of the emerging majority of the Deaf community that is underrepresented in the United States and the world. Course may be repeated as topics change. PST 229.
+</p>
+            </div>
+        </div>
+    </div>
+    <div class=" AC_section-more container-fluid">
+        <div class="row AC_py3 AC_px10">
+            <div class="col-sm-12">
+                <h2>You might like:</h2>
+            </div>
+            <div class="AC_section-morecard col-md-4 AC_px3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg"><h3>National Deaf Education Center</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class=" AC_section-morecard col-md-4 AC_px3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-vl2.png">
+                <h3>
+                    Visual Language Visual Learning</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="AC_section-morecard col-md-4 AC_px3 AC_py3">
+                <img aria-hidden="true" class="AC_icons-heading" src="/img/inkandsalt.png">
+                <h3>
+                    Ink and Salt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <footer class=" row header-fixed">
+        <h1 class="AC_text-center">Footer</h1>
+    </footer>
+</body>
+
+</html>

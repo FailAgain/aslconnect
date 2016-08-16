@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="455px" height="459px" viewBox="0 0 455 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-login</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="key" sketch:type="MSLayerGroup" fill="#F3C519">
+            <g id="Layer_1" sketch:type="MSShapeGroup">
+                <path d="M229.715,38.642 C188.493,79.864 180.258,141.576 204.997,190.992 L0.183,395.811 L0.061,454.87 C0.061,454.87 95.8577987,464.090986 114.593,455 C133.328201,445.909014 114.593,399.295 114.593,399.295 L170.298,399.295 L170.298,343.59 C170.298,343.59 212.078621,357.514379 226.003,343.59 C239.927379,329.665621 226.003,287.885 226.003,287.885 L263.946,249.942 C313.362,274.682 375.074,266.446 416.296,225.224 C467.82,173.701 467.82,90.165 416.296,38.642 C364.773,-12.881 281.238,-12.881 229.715,38.642 Z M374.355,137.001 C358.776,152.58 333.517,152.58 317.937,137.001 C302.357,121.422 302.358,96.163 317.937,80.583 C333.516,65.003 358.775,65.004 374.355,80.583 C389.935,96.163 389.935,121.422 374.355,137.001 L374.355,137.001 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

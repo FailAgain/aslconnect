@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="131px" height="66px" viewBox="0 0 131 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>aslconnect copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="71.6275867%" cy="14.4982479%" fx="71.6275867%" fy="14.4982479%" r="32.4549503%" id="radialGradient-1">
+            <stop stop-color="#FFFFFFE2FFFFFFE2FFFFFFE2" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5C5C5C" stop-opacity="0" offset="73.0260151%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="55.8921966%" cy="73.6412833%" fx="55.8921966%" fy="73.6412833%" r="30.4511755%" id="radialGradient-2">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5C5C5C" stop-opacity="0" offset="36.1168686%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="aslconnect-copy-2" sketch:type="MSLayerGroup" transform="translate(-6.000000, -19.000000)" stroke-width="6">
+            <g id="aslconnect" transform="translate(72.784988, 53.215827) rotate(-345.000000) translate(-72.784988, -53.215827) translate(7.784988, 15.715827)" sketch:type="MSShapeGroup">
+                <path d="M64.6751819,58.0998838 C87.8461913,58.0998838 108.156152,54.7377174 119.482443,49.6938684 C125.524134,47.0033696 129.009622,43.8343668 129.009622,40.4419225 C129.009622,30.6896998 100.206112,22.7839613 64.6751819,22.7839613 C29.1442517,22.7839613 0.340741737,30.6896998 0.340741737,40.4419225 C0.340741737,50.1941452 29.1442517,58.0998838 64.6751819,58.0998838 Z" id="Oval-1" stroke="url(#radialGradient-1)"></path>
+                <ellipse id="Oval-1" stroke="url(#radialGradient-2)" transform="translate(58.034194, 37.744214) rotate(-11.000000) translate(-58.034194, -37.744214) " cx="58.0341938" cy="37.744214" rx="60.9122393" ry="13.9000434"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
