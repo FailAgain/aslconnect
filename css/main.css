@@ -96,7 +96,7 @@ p {
 }
 
 .AC_navbar {
-    background: hsla(207, 96%, 20%, 0.82);
+    /*background: hsla(207, 96%, 20%, 0.82);*/
     color: hsl(0, 0%, 100%);
     width: 100%;
     z-index: 20;
@@ -332,6 +332,7 @@ p {
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 }
 
 .AC_section-box {
@@ -429,6 +430,10 @@ p {
 .AC_section.right .AC_section-splash {
     order: 1;
 }
+
+/*.AC_splashvideo{
+    max-height: 80vh;
+}*/
 
 .AC_section.left .AC_section-splash {
     order: 0;
