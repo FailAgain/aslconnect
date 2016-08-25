@@ -106,6 +106,67 @@ p {
     bottom: 0;
     height: 70px;
     max-height: 70px;
+    justify-content: space-between;
+}
+
+.AC_navbarmobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: hsla(207, 100%, 24%, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    min-height: 100vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.AC_navbarmobile .nav-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.AC_navbarmobile.visible {
+    pointer-events: inherit;
+    opacity: 1;
+}
+
+.AC_navbar-close {
+    font-size: 3em;
+    line-height: 0;
+    text-align: right;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: .5em;
+}
+
+.AC_navbar-close:hover {
+    -webkit-filter: brightness(.5);
+}
+
+.AC_navbar-menu {
+    justify-content: flex-end;
+    display: none;
+    align-items: center;
+    padding: 0 0.4em 0.4em 0;
+    flex: 1;
+}
+
+.AC_navbar-menu img {
+    height: 60px;
+}
+
+.AC_navbar-menu:hover {
+    -webkit-filter: brightness(.5);
 }
 
 .AC_navbar ul {
@@ -116,6 +177,18 @@ p {
     align-items: center;
     flex: 1;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.AC_navbarmobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vmin;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 4vmin;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -148,6 +221,21 @@ p {
 .AC_navbar-li:hover a {
     text-decoration: underline;
 }
+
+.AC_navbarmobile-li a {
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: 4vmax;
+    line-height: 2.4em;
+}
+
+.AC_navbarmobile-li:hover a {
+    text-decoration: underline;
+}
+
 
 .AC_header {
     padding: 0;
@@ -610,7 +698,7 @@ p {
 }
 
 @media (orientation:portrait) and (min-width:992px) {
-    .embed-container.fullscreen{
+    .embed-container.fullscreen {
         position: relative;
         width: calc(126vmax);
         height: calc(100vh - 107px);
@@ -629,11 +717,20 @@ p {
 }
 
 @media (orientation:landscape) and (min-width:992px) {
-    .embed-container.fullscreen{
+    .embed-container.fullscreen {
         position: relative;
         width: calc(100vw);
         height: calc(126vw - 107px);
         margin-top: -25%;
+    }
+}
+
+@media (max-width:1100px) {
+    .AC_navbar-menu {
+        display: flex;
+    }
+    .AC_navbar ul {
+        display: none;
     }
 }
 
