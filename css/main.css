@@ -403,7 +403,6 @@ p {
     align-items: center;
     position: relative;
     overflow: hidden;
-    z-index: 10;
     background: white;
 }
 
@@ -735,6 +734,10 @@ p {
     .AC_navbarmobile{
         display: flex;
     }
+}
+
+.embed-container{
+    overflow: hidden;
 }
 
 .embed-container iframe,

@@ -27,31 +27,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script>
-    var $ = jQuery;
-
-    function animateWelcomeBox() {
-        $('#j-welcome').addClass('visible');
-        console.log('animating welcome box');
-    }
-
-    function animateBody() {
-        $('body').addClass('visible');
-        console.log('animating welcome box');
-    }
-
-    function animateWelcomeBox() {
-        $('#j-welcome').addClass('visible');
-        console.log('animating welcome box');
-    }
-
-    $(function() {
-        console.log('script init');
-        window.setTimeout(animateWelcomeBox, 2000);
-
-        animateBody();
-    });
-    </script>
+  <script type="text/javascript" src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
 </head>
 
@@ -70,25 +46,50 @@
             <h1>ASL Online</h1>
             <h2>Learn how to sign online</h2>
         </div>
-        <div class="AC_navbar">
-            <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+               <div id="j-navmobilemenu" class="AC_navbarmobile">
+            <div class="nav-header">
+                <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+                <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
+            </div>
             <ul>
-                <li class="AC_navbar-li AC_px3">
-                    <a href="/basic.html">Free Basic ASL</a>
+                <li class="AC_navbarmobile-li">
+                    <a href="/basic.html">ASL for Free</a>
                 </li>
-                <li class="AC_navbar-li AC_px3">
+                <li class="AC_navbarmobile-li">
                     <a href="/asl.html">ASL Classes</a>
                 </li>
-                <li class="AC_navbar-li AC_px3">
+                <li class="AC_navbarmobile-li">
                     <a href="/dst.html">Deaf Studies</a>
                 </li>
-                <li class="AC_navbar-li AC_px3">
+                <li class="AC_navbarmobile-li">
                     <a href="/soon.html">Tutoring</a>
                 </li>
-                <li class="AC_navbar-li AC_px3">
+                <li class="AC_navbarmobile-li">
                     <a href="/placement.html">Placement Test</a>
                 </li>
             </ul>
+        </div>
+        <div class="AC_navbar">
+            <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+            <ul>
+                <li class="AC_navbar-li">
+                    <a href="/basic.html">ASL for Free</a>
+                </li>
+                <li class="AC_navbar-li">
+                    <a href="/asl.html">ASL Classes</a>
+                </li>
+                <li class="AC_navbar-li">
+                    <a href="/dst.html">Deaf Studies</a>
+                </li>
+                <li class="AC_navbar-li">
+                    <a href="/soon.html">Tutoring</a>
+                </li>
+                <li class="AC_navbar-li">
+                    <a href="/placement.html">Placement Test</a>
+                </li>
+            </ul>
+            <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
+            </div>
         </div>
     </div>
     <div class="AC_section right">
