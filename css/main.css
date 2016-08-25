@@ -121,7 +121,7 @@ p {
     pointer-events: none;
     min-height: 100vh;
     overflow: scroll;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -731,6 +731,9 @@ p {
     }
     .AC_navbar ul {
         display: none;
+    }
+    .AC_navbarmobile{
+        display: flex;
     }
 }
 
