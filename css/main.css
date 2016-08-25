@@ -30,7 +30,7 @@ h3 {
 p {
     font-family: 'Open Sans';
     font-weight: 100;
-    font-size: 2em;
+    font-size: 3vmin;
     color: black;
 }
 
@@ -125,7 +125,7 @@ p {
     flex-direction: column;
 }
 
-.AC_navbarmobile .nav-header{
+.AC_navbarmobile .nav-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -235,7 +235,6 @@ p {
 .AC_navbarmobile-li:hover a {
     text-decoration: underline;
 }
-
 
 .AC_header {
     padding: 0;
@@ -412,7 +411,7 @@ p {
 }
 
 .AC_section-textbalancer {
-    max-width: 600px;
+    width: 55vmin;
     padding: 6vmin;
     position: relative;
     z-index: 1;
@@ -731,12 +730,30 @@ p {
     .AC_navbar ul {
         display: none;
     }
-    .AC_navbarmobile{
+    .AC_navbarmobile {
         display: flex;
     }
 }
 
-.embed-container{
+@media (max-width: 720px){
+    .AC_section p {
+        font-size: 4vmin;
+    }
+    .AC_section {
+        flex-direction: column;
+    }
+    .AC_section-splash{
+        order: 0 !important;
+        min-height: ;
+    }
+    .AC_section-textbalancer{
+        order: 1 !important;
+        width: 100%;
+        padding: 2vmin;
+    }
+}
+
+.embed-container {
     overflow: hidden;
 }
 
