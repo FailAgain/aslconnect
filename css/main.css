@@ -373,11 +373,6 @@ p {
     /* from height .AC_navbar */
 }
 
-.AC_fold .AC_section-welcomebox {
-    position: absolute;
-    bottom: 0;
-}
-
 .AC_section-welcomeboxhome {
     padding-bottom: 40vh;
 }
