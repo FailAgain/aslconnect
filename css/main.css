@@ -15,10 +15,18 @@ h1 {
     color: hsl(207, 100%, 24%);
 }
 
+title {
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 4vmin;
+    color: black;
+    display: block;
+}
+
 h2 {
     font-family: 'Crimson Text', sans-serif;
     font-weight: 300;
-    font-size: 7rem;
+    font-size: 6vmin;
     color: hsl(207, 100%, 24%);
     margin-top: .1em;
 }
@@ -636,29 +644,80 @@ p {
     overflow: hidden;
 }
 
-
-/*@media (orientation:landscape) {
-    .AC_fold-home iframe {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 131vw;
-        min-height: 147vmin;
-        width: auto;
-        height: auto;
-        z-index: -1;
-        transform: translate(-50%, -50%);
-    }
+.AC_section-library{
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: .5vmin;
+    min-height: initial;
 }
-*/
+
+.AC_section-librarybox{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1vmin;
+    transition: .3s all 0s ease-in-out;
+    min-height: 30vmin;
+    padding: 4em;
+}
+
+
+.AC_section-librarybox:hover{
+    transform: scale(.8);
+}
+
+.AC_section-librarybox p{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px .3em black;
+    font-size: 2.75vmin;
+}
+
+#swipebox-overlay{
+    background: hsla(207, 100%, 24%, 0.95);
+}
+
+#swipebox-top-bar, #swipebox-bottom-bar{
+    background: transparent;
+}
+
+#swipebox-top-bar.visible-bars {
+   transform: inherit;
+}
+
+#swipebox-top-bar{
+    font-family: "Open Sans";
+    font-size: 3em;
+    font-weight: 100;
+    transform: translateY(1em) !important;
+    top: initial !important;
+}
+
+#swipebox-bottom-bar{
+    bottom: 10px;
+    top: initial;
+}
+
+#swipebox-bottom-bar.visible-bars{
+    transform: initial;
+}
 
 @media (max-width:992px) {
+
+    .AC_section-librarybox{
+        flex-basis: 33%;
+    }
+
     .AC_fold-home {
         min-height: calc(100vh - 60px);
     }
     .AC_header-gallaudet {
         height: 60px;
     }
+
 }
 
 @media (min-width:450px) {
@@ -735,21 +794,40 @@ p {
     }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
     .AC_section p {
         font-size: 4vmin;
+    }
+    .AC_section h2 {
+        font-size: 8vmin;
+    }
+    .AC_section h3 {
+        font-size: 6vmin;
+        padding: 0;
     }
     .AC_section {
         flex-direction: column;
     }
-    .AC_section-splash{
+
+    .AC_section-library{
+        flex-direction: row;
+    }
+
+    .AC_section-library title{
+        font-size: 4vmin;
+    }
+    .AC_section-splash {
         order: 0 !important;
         min-height: ;
     }
-    .AC_section-textbalancer{
+    .AC_section-textbalancer {
         order: 1 !important;
         width: 100%;
         padding: 2vmin;
+    }
+    .AC_section-librarybox{
+        flex-basis: 50%;
+        min-width: initial;
     }
 }
 
