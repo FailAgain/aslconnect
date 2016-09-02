@@ -17,9 +17,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
     <link href="http://www2.gallaudet.edu/site/bootstrap/css/bootstrap.min.csgz" rel="stylesheet">
-        <link rel="stylesheet" href="http://brutaldesign.github.io/swipebox/src/css/swipebox.css">
-
-<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Our CSS -->
     <!--<link href="http://www2.gallaudet.edu/site/css/screen.csgz" rel="stylesheet">-->
     <link href="css/homepage.css" rel="stylesheet">
@@ -41,6 +40,7 @@
     <header class="AC_header">
         <img src="/img/gallaudet-header.png" class="img-responsive AC_header-gallaudet" alt="logo">
     </header>
+
     <div class="AC_fold AC_section AC_section-welcome" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_obniz6pd/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover; ">
         <div class="embed-container">
         </div>
@@ -94,16 +94,42 @@
             </div>
         </div>
     </div>
-    <div class="AC_section AC_section-library">
-        <article class="gallery AC_section-librarybox" style="background: url('https://unsplash.it/700/?random&blur&xrT9') center center no-repeat; background-size: cover;" "><p>Family</p></article>
-        <article class="gallery AC_section-librarybox " style="background: url( 'https://unsplash.it/700/?random&blur&xrT6') center no-repeat; background-size: cover; " ">
-            <p>Conversational</p>
-        </article>
-        <article class="gallery AC_section-librarybox" style="background: url('https://unsplash.it/700/?random&blur&xrT5') center no-repeat; background-size: cover;" "><p>Science</p></article>
-        <article class="gallery AC_section-librarybox " style="background: url( 'https://unsplash.it/700/?random&blur&xrT2') center no-repeat; background-size: cover; " ">
-            <p>City Life</p>
-        </article>
-        <article class="gallery AC_section-librarybox" style="background: url('https://unsplash.it/700/?random&blur&xrT1') center no-repeat; background-size: cover;" "><p>Household Things</p></article>
+    <div class="AC_section-library">
+        <ul class="AC_library-categories">
+            <h1>Topics</h1>
+            <li class="AC_library-category"><a href="">Family</a></li>
+            <li class="AC_library-category"><a href="">Household</a></li>
+            <li class="AC_library-category"><a href="">City Life</a></li>
+            <li class="AC_library-category"><a href="">Everyday Objects</a></li>
+            <li class="AC_library-category"><a href="">Misc</a></li>
+        </ul>
+        <div id="j_library-gallery" class="AC_library-gallery">
+            <article class="gallery AC_library-card">
+                <video autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                   <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                </video>
+            </article>
+            <article class="gallery AC_library-card ">
+               <video  title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                   <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                </video>
+            </article>
+            <article class="gallery AC_library-card">
+               <video  title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                   <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                </video>
+            </article>
+            <article class="gallery AC_library-card ">
+               <video  title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                   <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                </video>
+            </article>
+            <article class="gallery AC_library-card">
+               <video  title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                   <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                </video>
+            </article>
+        </div>
     </div>
     <div class="AC_section right ">
         <div class="AC_section-splash " style=" background: url( 'img/splashes/asl.jpg') center no-repeat; background-size: cover; "></div>
@@ -127,24 +153,42 @@
     <footer class="AC_footer ">
         <img src="/img/gallaudet-footer.png " class="img-responsive " alt="logo ">
     </footer>
-    <script type="text/javascript " src="js/swipevideo.js "></script>
-     <script type="text/javascript ">
-    ;
-    (function($) {
-
-        $('.gallery').click(function(e) {
-            e.preventDefault();
-            $.swipebox([{
-                href: 'https://media.gallaudet.edu/embed/secure/iframe/entryId/1_obniz6pd/uiConfId/36051771',
-                title: 'Family'
-            }, {
-                href: 'https://media.gallaudet.edu/embed/secure/iframe/entryId/1_n69bmwe2/uiConfId/33370581',
-                title: 'Family'
-            }],{ autoplayVideos: false, hideBarsDelay : 10000});
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js "></script>
+    <script type="text/javascript" src="http://player.kaltura.com/kWidget/kWidget.getSources.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var gallery = new Flickity('#j_library-gallery', {
+            accessibility: true,
+            contain: true,
+            setGallerySize: false,
+            draggable: false
         });
 
+        $('video').click(function(e){
+            e.target.play();
+        })
+    });
 
-    })(jQuery);
+    // kWidget.getSources({
+    //             'partnerId': {
+    //                 "2075801"
+    //             },
+    //             'entryId': {
+    //                 "1_n69bmwe2"
+    //             },
+    //             'callback': function(data) {
+    //                 // data includes an array of sources that can easily be put into a video tag:
+    //                 $vid = $('<video />').attr({
+    //                     'title': data.name,
+    //                     'poster': data.poster + '/width/1200',
+    //                 })
+    //                 for (var i = 0; i < data.sources.length; i++) {
+    //                     $vid.append(
+    //                         $('<source />').attr(data.sources[i])
+    //                     )
+    //                 }
+    //                 $('body').append($vid)
+    //             })
     </script>
 </body>
 
