@@ -903,6 +903,6 @@ p {
     height: 100%;
 }
 
-.embed-container.fullscreen{
+.embed-container.fullscreen video{
     width: initial;
 }
