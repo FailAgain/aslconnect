@@ -181,7 +181,7 @@ p {
     list-style: none;
     display: flex;
     padding: 0 5vmin;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex: 1;
     margin: 0;
@@ -206,11 +206,9 @@ p {
 
 .AC_navbar li {
     white-space: nowrap;
+    padding: 0 1em;
 }
 
-.AC_navbar li:hover {
-    font-size: 1rem;
-}
 
 .AC_navbar.affix {
     transform: translateY(10px);

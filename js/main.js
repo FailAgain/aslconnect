@@ -36,4 +36,6 @@
             toggleMobileMenu();
             console.log('clicking close button');
         });
+
+        $('#introvideo').get(0).play();
     });
