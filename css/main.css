@@ -700,17 +700,33 @@ p {
     height: 44px;
     border: none;
     border-radius: 50%;
-    background: hsl(0, 0%, 100%);
-    background: hsla(0, 0%, 100%, .75);
+    background: hsl(54, 83%, 86%);
     cursor: pointer;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin: 0 3vmin;
-    margin-top: 0px;
-    margin-right: 3vmin;
-    margin-bottom: 0px;
-    margin-left: 3vmin;
+    margin: 0;
+    top: initial;
+    bottom: 0;
 }
+
+.flickity-viewport{
+    flex: 1;
+    height: initial;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: hsl(207, 100%, 24%);
+}
+
+.flickity-prev-next-button:hover{
+    -webkit-filter: brightness(.5);
+     background: hsl(54, 83%, 86%);
+}
+
+.flickity-prev-next-button:disabled {
+    cursor: not-allowed;
+}
+
 
 .AC_library-categories {
     display: flex;
@@ -736,18 +752,42 @@ p {
     color: white;
 }
 
-.AC_library-gallery {
-    display: block;
-    flex: 1;
-    min-height: 50vmin;
+.AC_gallery-overlay{
     padding: 2vmin;
     background: hsla(207, 100%, 24%, 0.95);
     position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 10;
+}
+
+.AC_gallery-overlay header{
+    display: flex;
+    align-items: center;
+    min-height: 10vmin;
+}
+
+.AC_gallery-overlay header h1{
+    font-size: 6vmin;
+    margin: 0;
+    color: white;
+}
+
+.AC_gallery-overlay .close-button{
+    padding: 0;
+}
+
+.AC_library-gallery {
+    flex: 1;
+    display: flex;
+}
+
+.AC_library-gallery .title{
+    display
 }
 
 .AC_library-card {
@@ -759,7 +799,6 @@ p {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 4vmin;
 }
 
 .AC_library-categories h1 {
