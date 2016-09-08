@@ -1033,3 +1033,48 @@ p {
 .embed-container.fullscreen video {
     width: initial;
 }
+
+.AC_section-faq{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vmin;
+    padding: 0 4vmin;
+    font-family: "Open Sans";
+    font-weight: 500;
+}
+
+.AC_section-faq .panel-group{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.AC_section-faq .panel-group .panel{
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+.AC_section-faq .panel-heading a:hover,.AC_section-faq .panel-heading a, .AC_section-faq .panel-heading a:active, .AC_section-faq .panel-heading a:visited {
+    text-decoration: none;
+}
+
+.AC_section-faq .panel-title{
+    font-size: 30px;
+    font-family: "Crimson Text";
+}
+
+.panel-default>.panel-heading {
+    background: none;
+    border: none;
+}
+
+.panel-default>.panel-heading:hover{
+    background: beige;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+
+    }
