@@ -1,11 +1,5 @@
 body {
     position: relative;
-    opacity: 0;
-}
-
-body.visible {
-    opacity: 1;
-    transition: 1s all ease-out
 }
 
 h1 {
