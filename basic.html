@@ -38,11 +38,13 @@
     <header class="AC_header">
         <img src="/img/gallaudet-header.png" class="img-responsive" alt="logo">
     </header>
-    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_n69bmwe2/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover;">
+    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_c365iqzv/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover;">
         <div class="embed-container">
-            <video autoplay loop title="Free Basic ASL Intro Video" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
-                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_n69bmwe2/flavorId/1_bwgaektt/format/url/protocol/http/a.mp4" type="video/mp4">
+            <video id="mainvideo" crossorigin autoplay loop title="Free Basic ASL Intro Video" data-entryid="1_c365iqzv" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_c365iqzv/version/100001/acv/151/width/640">
+                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_c365iqzv/flavorId/1_bwgaektt/format/url/protocol/http/a.mp4" type="video/mp4">
+                <track kind="captions" language="English" srclang="en_us" label="English" id="1_o9tda5yt" src="/track.vtt" title="English" default="true">
             </video>
+            <button id="subtitles" class="AC_video-subtitles">Subtitles On/Off</button>
         </div>
         <div id="j-welcome" class="AC_section-welcomebox">
             <h1>Learn Basic ASL</h1>
@@ -97,9 +99,11 @@
               Learn a Sign a Day
             </h2>
                 <p>ASL Connect offers you several way to learn a Sign a Day. We offer email subscriptions and updates through social media. </p>
-                <div><a class="AC_link" href="/basic.html">
-                            Subscribe via Email
-                        </a></div>
+                <div>
+                    <button data-toggle="modal" data-target="#myModal" class="AC_link">
+                        Subscribe via Email
+                    </button>
+                </div>
                 <div class="AC_py3">
                     <a class="AC_link-image" href="/basic.html">
                         <img src="/img/icon-facebook.svg">
@@ -110,6 +114,40 @@
                     <a class="AC_link-image" href="/basic.html">
                         <img src="/img/icon-instagram.svg">
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Want to learn?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-email" class="control-label">Your Email Address</label>
+                                <input type="email" class="form-control" id="recipient-email">
+                               <p>Choose your subscription type</p>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="checkbox" autocomplete="off" checked> Sign a Day
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="checkbox" autocomplete="off"> ASL by Themes
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="checkbox" autocomplete="off"> Both
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No Thanks</button>
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,9 +196,9 @@
                 <h2>
                 Want to take classes?
             </h2>
-            <p>
-                For more in-depth learning of ASL, sign up for one of our online classes.
-            </p>
+                <p>
+                    For more in-depth learning of ASL, sign up for one of our online classes.
+                </p>
                 <div><a class="AC_link" href="/facebook.html">
                             Start today
                         </a></div>
