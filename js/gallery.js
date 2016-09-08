@@ -1,13 +1,23 @@
     function closeGallery() {
         $('#j-closeGallery').click(function() {
             $('#j-gallery-overlay').toggleClass('hidden');
-            new Flickity('#j_library-gallery', {
-                accessibility: true,
-                contain: true,
-                setGallerySize: false,
-                draggable: false,
-                pageDots: false
-            });
+        });
+    }
+
+    function pauseAllVideos() {
+        //pauses all videos on page
+        $('video').each(function() {
+            $(this).get(0).pause();
+            var ispaused = $(this).get(0).paused;
+            console.log('video is paused: ' + ispaused);
+        });
+    }
+
+    function autoplaySelectedVideo() {
+        //starts only the current video
+        $('.is-selected video').get(0).play(function() {
+            var isplaying = $(this).get(0).playing;
+            console.log('video is playing: ' + isplaying);
         });
     }
 
@@ -23,10 +33,14 @@
 
         $('#j-closeGallery').click(function() {
             $('#j-gallery-overlay').toggleClass('hidden');
+
+
         });
 
-        $('#j-openGallery').click(function() {
+        $('.openGallery').click(function() {
+
             $('#j-gallery-overlay').toggleClass('hidden');
+            gallery.resize();
         });
 
         function listener() {
@@ -36,21 +50,12 @@
         //autoplays & pauses each video when selected.
         gallery.on('select', function() {
 
-            //pauses all videos on page
-            $('video').each(function() {
-                $(this).get(0).pause();
-                var ispaused = $(this).get(0).paused;
-                console.log('video is paused: ' + ispaused);
-            });
+           pauseAllVideos();
+           autoplaySelectedVideo();
 
-            //starts only the current video
-            $('.is-selected video').get(0).play(function() {
-                var isplaying = $(this).get(0).playing;
-                console.log('video is playing: ' + isplaying);
-            });
         })
     }
 
     $(function() {
-       initGalleryFunctions();
+        initGalleryFunctions();
     });
