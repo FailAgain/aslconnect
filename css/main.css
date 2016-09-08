@@ -825,6 +825,7 @@ p {
     right: 1em;
     outline: none;
     border: none;
+    color: hsl(207, 100%, 24%);
 }
 
 .AC_video-subtitles:hover{
