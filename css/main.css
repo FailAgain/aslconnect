@@ -32,7 +32,7 @@ h3 {
 p {
     font-family: 'Open Sans';
     font-weight: 100;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     color: black;
 }
 
@@ -320,7 +320,7 @@ p {
 }
 
 .AC_icons-heading {
-    height: 8rem;
+    height: 7rem;
     display: inline-block;
     margin-right: 1rem;
     -webkit-filter: hue-rotate(7deg) saturate(0.6);
@@ -352,15 +352,15 @@ p {
     margin-left: -1rem;
 }
 
-.AC_section-textbalancer .AC_link{
-    margin-top: 2em;
+.AC_section-textbalancer .AC_link {
+    margin-top: 1em;
 }
 
 .AC_link {
     font-family: "Open Sans";
     display: inline-block;
     color: hsl(60, 56%, 91%);
-    font-size: 1.5em;
+    font-size: 2.5vmin;
     font-weight: 300;
     text-transform: uppercase;
     transition: .2s all 0s ease-in-out;
@@ -397,7 +397,6 @@ p {
 
 .AC_section {
     display: flex;
-    min-height: 55vmin;
     width: 100%;
     min-width: 100%;
     justify-content: center;
@@ -413,14 +412,13 @@ p {
 }
 
 .AC_section-textbalancer {
-    width: 55vmin;
-    padding: 6vmin;
+    width: 65vmin;
+    padding: 3vmax;
     position: relative;
     z-index: 1;
 }
 
 .AC_section-splash {
-    min-height: 55vmin;
     flex: 1;
     background: gray;
     -webkit-filter: saturate(0);
@@ -442,8 +440,12 @@ p {
     opacity: 1;
 }
 
-.AC_section:hover .AC_link {
-    transform: scale(1.2);
+.AC_section.left:hover .AC_link {
+    transform: translateX(-1em);
+}
+
+.AC_section.right:hover .AC_link {
+    transform: translateX(1em);
 }
 
 .AC_section:hover .AC_icons-heading {
@@ -486,12 +488,12 @@ p {
     opacity: 0;
 }
 
-.AC_section-welcomebox.invisible{
+.AC_section-welcomebox.invisible {
     display: none;
     transition: none;
 }
 
-.AC_section-welcomebox.invisible *{
+.AC_section-welcomebox.invisible * {
     transition: none;
     display: none;
 }
@@ -620,6 +622,7 @@ p {
     overflow: hidden;
     position: relative;
     flex-direction: column;
+    min-height: 55vmin;
 }
 
 .AC_fold-home {
@@ -648,15 +651,14 @@ p {
     overflow: hidden;
 }
 
-.AC_section-library{
+.AC_section-library {
     flex-wrap: wrap;
     align-items: stretch;
     padding: .5vmin;
     min-height: initial;
 }
 
-
-.AC_library-topic{
+.AC_library-topic {
     flex: 1;
     display: flex;
     align-items: center;
@@ -672,12 +674,12 @@ p {
     flex-basis: 20%
 }
 
-.AC_library-topic:hover{
+.AC_library-topic:hover {
     transform: scale(.8);
 }
 
-.AC_library-topic p{
-    background: hsla(0,0%,0%,.6);
+.AC_library-topic p {
+    background: hsla(0, 0%, 0%, .6);
     width: 100%;
     text-align: center;
     font-weight: 400;
@@ -703,24 +705,23 @@ p {
     bottom: 0;
 }
 
-.flickity-viewport{
+.flickity-viewport {
     flex: 1;
     height: initial;
 }
 
 .flickity-prev-next-button .arrow {
-  fill: hsl(207, 100%, 24%);
+    fill: hsl(207, 100%, 24%);
 }
 
-.flickity-prev-next-button:hover{
+.flickity-prev-next-button:hover {
     -webkit-filter: brightness(.5);
-     background: hsl(54, 83%, 86%);
+    background: hsl(54, 83%, 86%);
 }
 
 .flickity-prev-next-button:disabled {
     cursor: not-allowed;
 }
-
 
 .AC_library-categories {
     display: flex;
@@ -746,7 +747,7 @@ p {
     color: white;
 }
 
-.AC_gallery-overlay{
+.AC_gallery-overlay {
     padding: 2vmin;
     background: hsla(207, 100%, 24%, 0.95);
     position: fixed;
@@ -759,19 +760,19 @@ p {
     left: 0;
 }
 
-.AC_gallery-overlay header{
+.AC_gallery-overlay header {
     display: flex;
     align-items: center;
     min-height: 10vmin;
 }
 
-.AC_gallery-overlay header h1{
+.AC_gallery-overlay header h1 {
     font-size: 6vmin;
     margin: 0;
     color: white;
 }
 
-.AC_gallery-overlay .close-button{
+.AC_gallery-overlay .close-button {
     padding: 0;
 }
 
@@ -780,7 +781,7 @@ p {
     display: flex;
 }
 
-.AC_library-gallery .title{
+.AC_library-gallery .title {
     display
 }
 
@@ -861,30 +862,30 @@ p {
     color: hsl(207, 100%, 24%);
 }
 
-.AC_video-subtitles:hover{
+.AC_video-subtitles:hover {
     background: hsl(54, 63%, 70%);
 }
 
-.modal-dialog{
+.modal-dialog {
     margin-top: 30vh;
 }
 
-.modal-content{
+.modal-content {
     padding: 20px;
     text-align: center;
 }
 
-.modal label{
+.modal label {
     display: none;
 }
 
-.modal input{
+.modal input {
     font-size: 3vmin;
     padding: 1em;
     margin: 2vmin 0;
 }
 
-.modal .AC_link{
+.modal .AC_link {
     width: 80%;
 }
 
@@ -895,7 +896,7 @@ p {
     .AC_header-gallaudet {
         height: 60px;
     }
-    .AC_library-topic{
+    .AC_library-topic {
         flex-basis: 33%;
     }
 }
@@ -972,6 +973,9 @@ p {
     .AC_navbarmobile {
         display: flex;
     }
+    .AC_section-textbalancer {
+        width: 55vmin;
+    }
 }
 
 @media (max-width: 720px) {
@@ -996,20 +1000,22 @@ p {
     }
     .AC_section-splash {
         order: 0 !important;
-        min-height: ;
+        min-height: 55vmin;
+    }
+    .AC_section-box {
+        padding: 4vmin;
+        text-align: center;
     }
     .AC_section-textbalancer {
         order: 1 !important;
         width: 100%;
         padding: 2vmin;
     }
-
     .AC_library-card {
         flex-basis: 50%;
         min-width: initial;
     }
-
-    .AC_library-topic{
+    .AC_library-topic {
         flex-basis: 50%;
         min-width: initial;
     }
@@ -1034,7 +1040,7 @@ p {
     width: initial;
 }
 
-.AC_section-faq{
+.AC_section-faq {
     width: 100%;
     font-size: 20px;
     display: flex;
@@ -1045,22 +1051,25 @@ p {
     font-weight: 500;
 }
 
-.AC_section-faq .panel-group{
+.AC_section-faq .panel-group {
     max-width: 1000px;
     width: 100%;
 }
 
-.AC_section-faq .panel-group .panel{
+.AC_section-faq .panel-group .panel {
     margin-bottom: 20px;
     border-radius: 0px;
     border-color: transparent;
 }
 
-.AC_section-faq .panel-heading a:hover,.AC_section-faq .panel-heading a, .AC_section-faq .panel-heading a:active, .AC_section-faq .panel-heading a:visited {
+.AC_section-faq .panel-heading a:hover,
+.AC_section-faq .panel-heading a,
+.AC_section-faq .panel-heading a:active,
+.AC_section-faq .panel-heading a:visited {
     text-decoration: none;
 }
 
-.AC_section-faq .panel-title{
+.AC_section-faq .panel-title {
     font-size: 30px;
     font-family: "Crimson Text";
 }
@@ -1070,11 +1079,10 @@ p {
     border: none;
 }
 
-.panel-default>.panel-heading:hover{
+.panel-default>.panel-heading:hover {
     background: beige;
 }
 
 .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: none;
-
-    }
+}
