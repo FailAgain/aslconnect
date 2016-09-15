@@ -20,7 +20,7 @@ title {
 h2 {
     font-family: 'Crimson Text', sans-serif;
     font-weight: 300;
-    font-size: 6vmin;
+    font-size: 5vmin;
     color: hsl(207, 100%, 24%);
     margin-top: .1em;
 }
@@ -32,7 +32,7 @@ h3 {
 p {
     font-family: 'Open Sans';
     font-weight: 100;
-    font-size: 3.5vmin;
+    font-size: 2.3vmin;
     color: black;
 }
 
@@ -360,7 +360,7 @@ p {
     font-family: "Open Sans";
     display: inline-block;
     color: hsl(60, 56%, 91%);
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     font-weight: 300;
     text-transform: uppercase;
     transition: .2s all 0s ease-in-out;
@@ -922,6 +922,9 @@ p {
 @media (min-width:1400px) {
     .AC_section-morecard {
         flex-basis: 20%;
+    }
+    .AC_section-textbalancer{
+        width: 75vmin;
     }
 }
 
