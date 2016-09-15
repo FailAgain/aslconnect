@@ -460,6 +460,7 @@ p {
     transition: 1s all cubic-bezier(0.42, 0, 0.35, 0.64);
     position: absolute;
     bottom: calc(70px);
+    left: 0;
     /* from height .AC_navbar */
 }
 
@@ -781,10 +782,6 @@ p {
     display: flex;
 }
 
-.AC_library-gallery .title {
-    display
-}
-
 .AC_library-card {
     display: flex;
     align-items: center;
@@ -851,19 +848,41 @@ p {
 
 .AC_video-subtitles {
     position: absolute;
-    background: hsl(54, 83%, 86%);
-    font-size: 1.6em;
-    border-radius: 1em;
-    padding: 0 0.7em;
-    top: 1em;
-    right: 1em;
+    background: none;
+    top: 4.75em;
+    right: .75em;
     outline: none;
     border: none;
     color: hsl(207, 100%, 24%);
 }
 
+.AC_video-play.invisible,
+.AC_video-pause.invisible{
+    display: none;
+}
+
+.AC_video-play,
+.AC_video-pause {
+    position: absolute;
+    background: none;
+    width: ;
+    top: .75em;
+    right: .75em;
+    outline: none;
+    border: none;
+    color: hsl(207, 100%, 24%);
+}
+
+.AC_video-play img,
+.AC_video-pause img,
+.AC_video-subtitles img{
+    height: 45px;
+}
+
+.AC_video-play:hover,
+.AC_video-pause:hover,
 .AC_video-subtitles:hover {
-    background: hsl(54, 63%, 70%);
+    opacity: .7;
 }
 
 .modal-dialog {
@@ -923,7 +942,7 @@ p {
     .AC_section-morecard {
         flex-basis: 20%;
     }
-    .AC_section-textbalancer{
+    .AC_section-textbalancer {
         width: 75vmin;
     }
 }
@@ -1088,4 +1107,10 @@ p {
 
 .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: none;
+}
+
+::cue {
+    font-size: 2.5vmin;
+    font-family: "Open Sans";
+    font-weight: 200;
 }

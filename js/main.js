@@ -11,11 +11,22 @@
     }
 
     function toggleSubtitles(video) {
-        $('#j-welcome').toggleClass('invisible');
         if (video.textTracks[0].mode == "showing") {
+            $('#j-welcome').removeClass('invisible');
             video.textTracks[0].mode = "hidden";
         } else {
+            $('#j-welcome').addClass('invisible');
             video.textTracks[0].mode = "showing";
+        }
+    }
+
+    function toggleVideoMode(video) {
+        if (!video.paused) {
+            $('#j-video-play').addClass('invisible');
+            $('#j-video-pause').removeClass('invisible');
+        } else if (video.paused) {
+            $('#j-video-play').removeClass('invisible');
+            $('#j-video-pause').addClass('invisible');
         }
     }
 
@@ -34,7 +45,19 @@
         //SETUP: hides main videos' subtitles if they are available
         if ($('#mainvideo').length) {
             v = $('#mainvideo').get(0);
+            console.log(v.textTracks[0].mode);
+            console.log("inital video texttrack mode: " + v.textTracks[0].mode);
             v.textTracks[0].mode = "hidden";
+            console.log(v.textTracks[0].mode);
+
+        }
+
+        //SETUP: determine which video button should be shown
+        if ($('#mainvideo').length) {
+            v = $('#mainvideo').get(0);
+            v.onplaying = function(){
+                toggleVideoMode(v);
+            }
         }
 
         //EVENT: click subtitles button (show/hide subtitles)
@@ -58,13 +81,16 @@
 
     });
 
-    //initalizes the topic video gallery
     $(function() {
-        $(document).on('click', 'video', function() {
-            if (this.paused) {
-                this.play();
-            } else {
-                this.pause();
-            }
+        $('#j-video-play').on('click', function() {
+            var video = $('#mainvideo').get(0);
+            video.play();
+            toggleVideoMode(video);
+        });
+
+        $('#j-video-pause').on('click', function() {
+            var video = $('#mainvideo').get(0);
+            video.pause();
+            toggleVideoMode(video);
         });
     });
