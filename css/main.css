@@ -411,6 +411,15 @@ p {
     /*flex-grow: .2; ADD TO MEDIA QUERY */
 }
 
+.AC_section-centered{
+    text-align: center;
+    padding: 6vmin;
+    display: block;
+}
+
+.AC_section-centered p{
+    padding: 1em;
+    }
 .AC_section-textbalancer {
     width: 65vmin;
     padding: 3vmax;
@@ -461,7 +470,7 @@ p {
     position: absolute;
     bottom: calc(70px);
     left: 0;
-    /* from height .AC_navbar */
+    z-index: 3;
 }
 
 .AC_section-welcomeboxhome {
@@ -947,43 +956,6 @@ p {
     }
 }
 
-@media (orientation:portrait) {
-    .embed-container.fullscreen {
-        position: relative;
-        width: calc(140vmax);
-        height: calc(100vh - 60px);
-        display: flex;
-        margin-left: -25%;
-    }
-}
-
-@media (orientation:portrait) and (min-width:992px) {
-    .embed-container.fullscreen {
-        position: relative;
-        width: calc(126vmax);
-        height: calc(100vh - 107px);
-        margin-left: -25%;
-    }
-}
-
-@media (orientation:landscape) {
-    .embed-container.fullscreen {
-        position: relative;
-        width: calc(100vw);
-        height: calc(140vw - 60px);
-        display: flex;
-        margin-top: -25%;
-    }
-}
-
-@media (orientation:landscape) and (min-width:992px) {
-    .embed-container.fullscreen {
-        position: relative;
-        width: calc(100vw);
-        height: calc(126vw - 107px);
-        margin-top: -25%;
-    }
-}
 
 @media (max-width:1100px) {
     .AC_navbar-menu {
@@ -1041,6 +1013,9 @@ p {
         flex-basis: 50%;
         min-width: initial;
     }
+    .AC_link{
+        font-size: 3.5vmin;
+    }
 }
 
 .embed-container {
@@ -1058,9 +1033,34 @@ p {
     height: 100%;
 }
 
+.embed-container.fullscreen{
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+}
+
+.embed-container.fullscreen iframe,
+.embed-container.fullscreen object,
+.embed-container.fullscreen embed,
+.embed-container.fullscreen video {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .embed-container.fullscreen video {
     width: initial;
 }
+
+
 
 .AC_section-faq {
     width: 100%;
