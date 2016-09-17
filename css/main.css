@@ -411,15 +411,16 @@ p {
     /*flex-grow: .2; ADD TO MEDIA QUERY */
 }
 
-.AC_section-centered{
+.AC_section-centered {
     text-align: center;
     padding: 6vmin;
     display: block;
 }
 
-.AC_section-centered p{
+.AC_section-centered p {
     padding: 1em;
-    }
+}
+
 .AC_section-textbalancer {
     width: 65vmin;
     padding: 3vmax;
@@ -437,23 +438,23 @@ p {
     transition: .2s all ease-in-out;
 }
 
-.AC_section.left:hover .AC_section-splash {
+.AC_section:not(.AC_section-centered):nth-of-type(2n + 1):hover .AC_section-splash {
     -webkit-filter: saturate(1);
     transform: translateX(-10%);
     opacity: 1;
 }
 
-.AC_section.right:hover .AC_section-splash {
+.AC_section:not(.AC_section-centered):nth-of-type(2n):hover .AC_section-splash {
     -webkit-filter: saturate(1);
     transform: translateX(10%);
     opacity: 1;
 }
 
-.AC_section.left:hover .AC_link {
+.AC_section:not(.AC_section-centered):nth-of-type(2n + 1):hover .AC_link {
     transform: translateX(-1em);
 }
 
-.AC_section.right:hover .AC_link {
+.AC_section:not(.AC_section-centered):nth-of-type(2n):hover .AC_link {
     transform: translateX(1em);
 }
 
@@ -517,7 +518,7 @@ p {
     transition: 0.5s all .4s ease-out;
 }
 
-.AC_section.right .AC_section-splash {
+.AC_section:not(.AC_section-centered):nth-of-type(2n) .AC_section-splash {
     order: 1;
 }
 
@@ -526,15 +527,15 @@ p {
     max-height: 80vh;
 }*/
 
-.AC_section.left .AC_section-splash {
+.AC_section:not(.AC_section-centered):nth-of-type(2n + 1) .AC_section-splash {
     order: 0;
 }
 
-.AC_section.right .AC_section-box {
+.AC_section:not(.AC_section-centered):nth-of-type(2n) .AC_section-box {
     justify-content: flex-end;
 }
 
-.AC_section.left .AC_section-box {
+.AC_section:not(.AC_section-centered):nth-of-type(2n + 1) .AC_section-box {
     justify-content: flex-start;
 }
 
@@ -560,6 +561,7 @@ p {
     position: relative;
     z-index: 10;
     flex-wrap: wrap;
+    padding: 3vmin;
     /*background: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(60, 56%, 91%) 12%);*/
 }
 
@@ -567,7 +569,7 @@ p {
     flex-basis: 100%;
 }
 
-.AC_section-morecard {
+.AC_more-card {
     background: hsl(0, 0%, 100%);
     padding: 4rem;
     border: 1vw hsl(60, 56%, 91%) solid;
@@ -580,7 +582,7 @@ p {
     width: 100%;
 }
 
-.AC_section-morecard:hover {
+.AC_more-card:hover {
     transform: scale(0.9);
     border-color: hsl(207, 100%, 24%);
     text-decoration: none;
@@ -598,18 +600,19 @@ p {
     margin-bottom: 4rem;
     margin-top: 4rem;
     text-align: center;
+    flex-basis: 100%;
 }
 
-.AC_section-morecard p {
+.AC_more-card p {
     font-size: 3vmin;
 }
 
-.AC_section-morecard h3 {
+.AC_more-card h3 {
     font-size: 4vmin;
     color: black;
 }
 
-.AC_section-morecard img + h3 {
+.AC_more-card img + h3 {
     font-size: 3vmin;
 }
 
@@ -624,7 +627,7 @@ p {
     padding-bottom: 0.6em;
 }
 
-.AC_section-morecard img {
+.AC_more-card img {
     margin: 0 auto;
 }
 
@@ -661,14 +664,22 @@ p {
     overflow: hidden;
 }
 
-.AC_section-library {
+.AC_section-tiles {
     flex-wrap: wrap;
     align-items: stretch;
     padding: .5vmin;
     min-height: initial;
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
 }
 
-.AC_library-topic {
+.AC_component-tile {
     flex: 1;
     display: flex;
     align-items: center;
@@ -684,11 +695,11 @@ p {
     flex-basis: 20%
 }
 
-.AC_library-topic:hover {
+.AC_component-tile:hover {
     transform: scale(.8);
 }
 
-.AC_library-topic p {
+.AC_component-tile p {
     background: hsla(0, 0%, 0%, .6);
     width: 100%;
     text-align: center;
@@ -866,7 +877,7 @@ p {
 }
 
 .AC_video-play.invisible,
-.AC_video-pause.invisible{
+.AC_video-pause.invisible {
     display: none;
 }
 
@@ -884,7 +895,7 @@ p {
 
 .AC_video-play img,
 .AC_video-pause img,
-.AC_video-subtitles img{
+.AC_video-subtitles img {
     height: 45px;
 }
 
@@ -924,38 +935,37 @@ p {
     .AC_header-gallaudet {
         height: 60px;
     }
-    .AC_library-topic {
+    .AC_component-tile {
         flex-basis: 33%;
     }
 }
 
 @media (min-width:450px) {
-    .AC_section-morecard {
+    .AC_more-card {
         flex-basis: 50%;
     }
 }
 
 @media (min-width:700px) {
-    .AC_section-morecard {
+    .AC_more-card {
         flex-basis: 33%;
     }
-    .AC_section-morecard p {
+    .AC_more-card p {
         font-size: 2vmin;
     }
-    .AC_section-morecard img + h3 {
+    .AC_more-card img + h3 {
         font-size: 2vmin;
     }
 }
 
 @media (min-width:1400px) {
-    .AC_section-morecard {
+    .AC_more-card {
         flex-basis: 20%;
     }
     .AC_section-textbalancer {
         width: 75vmin;
     }
 }
-
 
 @media (max-width:1100px) {
     .AC_navbar-menu {
@@ -986,10 +996,10 @@ p {
     .AC_section {
         flex-direction: column;
     }
-    .AC_section-library {
+    .AC_section-tiles {
         flex-direction: row;
     }
-    .AC_section-library title {
+    .AC_section-tiles title {
         font-size: 4vmin;
     }
     .AC_section-splash {
@@ -1009,11 +1019,11 @@ p {
         flex-basis: 50%;
         min-width: initial;
     }
-    .AC_library-topic {
+    .AC_component-tile {
         flex-basis: 50%;
         min-width: initial;
     }
-    .AC_link{
+    .AC_link {
         font-size: 3.5vmin;
     }
 }
@@ -1033,7 +1043,7 @@ p {
     height: 100%;
 }
 
-.embed-container.fullscreen{
+.embed-container.fullscreen {
     height: 100%;
     width: 100vw;
     z-index: 1;
@@ -1060,9 +1070,7 @@ p {
     width: initial;
 }
 
-
-
-.AC_section-faq {
+.AC_collapse-content {
     width: 100%;
     font-size: 20px;
     display: flex;
@@ -1073,25 +1081,25 @@ p {
     font-weight: 500;
 }
 
-.AC_section-faq .panel-group {
+.AC_collapse-content .panel-group {
     max-width: 1000px;
     width: 100%;
 }
 
-.AC_section-faq .panel-group .panel {
+.AC_collapse-content .panel-group .panel {
     margin-bottom: 20px;
     border-radius: 0px;
     border-color: transparent;
 }
 
-.AC_section-faq .panel-heading a:hover,
-.AC_section-faq .panel-heading a,
-.AC_section-faq .panel-heading a:active,
-.AC_section-faq .panel-heading a:visited {
+.AC_collapse-content .panel-heading a:hover,
+.AC_collapse-content .panel-heading a,
+.AC_collapse-content .panel-heading a:active,
+.AC_collapse-content .panel-heading a:visited {
     text-decoration: none;
 }
 
-.AC_section-faq .panel-title {
+.AC_collapse-content .panel-title {
     font-size: 30px;
     font-family: "Crimson Text";
 }

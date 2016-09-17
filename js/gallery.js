@@ -37,7 +37,7 @@
 
         });
 
-        $('.openGallery').click(function() {
+        $('.j-openGallery').click(function() {
 
             $('#j-gallery-overlay').toggleClass('hidden');
             gallery.resize();
