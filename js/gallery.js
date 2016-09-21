@@ -1,6 +1,6 @@
     function closeGallery() {
-        $('#j-closeGallery').click(function() {
-            $('#j-gallery-overlay').toggleClass('hidden');
+        $('.j-closeGallery').each().click(function() {
+            $('#j-gallery-overlay-family').toggleClass('hidden');
         });
     }
 
@@ -22,7 +22,7 @@
     }
 
     function initGalleryFunctions() {
-        var gallery = new Flickity('#j_library-gallery', {
+        var gallery = new Flickity('#j_library-gallery-family', {
             accessibility: true,
             contain: true,
             setGallerySize: false,
@@ -32,14 +32,14 @@
 
 
         $('#j-closeGallery').click(function() {
-            $('#j-gallery-overlay').toggleClass('hidden');
+            $('#j-gallery-overlay-family').toggleClass('hidden');
 
 
         });
 
         $('.j-openGallery').click(function() {
 
-            $('#j-gallery-overlay').toggleClass('hidden');
+            $('#j-gallery-overlay-family').toggleClass('hidden');
             gallery.resize();
         });
 
