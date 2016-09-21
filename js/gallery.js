@@ -43,10 +43,6 @@
             gallery.resize();
         });
 
-        function listener() {
-            console.log('this happened');
-        }
-
         //autoplays & pauses each video when selected.
         gallery.on('select', function() {
 
