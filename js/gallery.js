@@ -1,5 +1,5 @@
     function closeGallery() {
-        $('.j-closeGallery').each().click(function() {
+        $('.j-closeGallery').click(function() {
             $('#j-gallery-overlay-family').toggleClass('hidden');
         });
     }

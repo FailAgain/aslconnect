@@ -28,7 +28,14 @@
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
+    <script src="https://use.typekit.net/xis1zzx.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
@@ -41,12 +48,11 @@
     <div class="AC_fold-home AC_section-welcome AC_section-gradient" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_0jgvtcu4/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover;">
         <div class="embed-container fullscreen">
             <video id="frontvideo" title="splash video cropped" data-entryid="1_0jgvtcu4" data-description="" data-durationhint="33" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_0jgvtcu4/version/100001/acv/141/width/640" playsinline autoplay loop>
-               <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_0jgvtcu4/flavorId/1_1cy8tf67/format/url/protocol/http/a.mp4" type="video/mp4">
-
+                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_0jgvtcu4/flavorId/1_1cy8tf67/format/url/protocol/http/a.mp4" type="video/mp4">
             </video>
         </div>
         <div id="j-welcome" class="AC_section-welcomebox AC_text-center">
-            <h1>ASLConnect</h1>
+            <h1 style="font-family: 'minion-pro';"">ASLConnect</h1>
             <h2>Advance your American Sign Language skills online</h2>
         </div>
         <div id="j-navmobilemenu" class="AC_navbarmobile">
@@ -159,9 +165,8 @@
         </div>
     </div>
     </div>
-
     <div class="AC_section-more">
-            <h2>You might like:</h2>
+        <h2>You might like:</h2>
         <a href="https://www.gallaudet.edu/clerc-center/our-resources.html" class="AC_more-card AC_px3">
             <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-clerccenter.svg">
             <h3>National Deaf Education Center</h3>
@@ -193,8 +198,8 @@
         </a>
     </div>
     <div class="AC_section AC_section-centered ">
-            <h2>Need more information?</h2>
-            <a class="AC_link" href="mailto:email@email.com">Contact Us</a>
+        <h2>Need more information?</h2>
+        <a class="AC_link" href="mailto:email@email.com">Contact Us</a>
     </div>
     <footer class="AC_footer">
         <img src="/img/gallaudet-footer.png" class="img-responsive" alt="logo">
