@@ -27,8 +27,15 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://use.typekit.net/cqb5qru.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
@@ -40,23 +47,16 @@
     </header>
     <div class="AC_fold AC_section AC_section-welcome" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_vzh1uhod/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover; ">
         <div class="embed-container">
-           <video autoplay title="ASL Placement Test Intro Video" data-entryid="1_vzh1uhod" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640" loop>
+            <video autoplay title="ASL Placement Test Intro Video" data-entryid="1_vzh1uhod" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640" loop>
                 <source src="  http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4" type="video/mp4">
             </video>
         </div>
-<source data-bitrate="27104"
-    data-width="1920"
-    data-height="1080"
-    data-flavorid="avc1 1080P"
-    src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_c6fwkbvb/flavorId/1_hsagoprz/format/url/protocol/http/a.mp4"
-    type="video/h264">
-
-
+        <source data-bitrate="27104" data-width="1920" data-height="1080" data-flavorid="avc1 1080P" src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_c6fwkbvb/flavorId/1_hsagoprz/format/url/protocol/http/a.mp4" type="video/h264">
         <div id="j-welcome" class="AC_section-welcomebox">
             <h1>ASL Online</h1>
             <h2>Learn how to sign online</h2>
         </div>
-               <div id="j-navmobilemenu" class="AC_navbarmobile">
+        <div id="j-navmobilemenu" class="AC_navbarmobile">
             <div class="nav-header">
                 <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
                 <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
@@ -88,10 +88,9 @@
                 <li class="AC_navbar-li">
                     <a href="/dst.html">Deaf Studies</a>
                 </li>
-                 <li class="AC_navbar-li">
+                <li class="AC_navbar-li">
                     <a href="/placement.html">Placement Test</a>
                 </li>
-
             </ul>
             <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
             </div>

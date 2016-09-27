@@ -18,7 +18,7 @@ title {
 }
 
 h2 {
-    font-family: 'Crimson Text', sans-serif;
+    font-family: 'minion-pro', sans-serif;
     font-weight: 300;
     font-size: 5vmin;
     color: hsl(207, 100%, 24%);
@@ -621,7 +621,7 @@ p {
 }
 
 .AC_subtitle {
-    font-size: 2.6em;
+    font-size: 2.6vmin;
     font-family: "Open Sans";
     font-weight: 500;
     padding-bottom: 0.6em;
@@ -1007,7 +1007,7 @@ p {
 
 .AC_collapse-content .panel-title {
     font-size: 30px;
-    font-family: "Crimson Text";
+    font-family: "minion-pro";
 }
 
 .panel-default>.panel-heading {
