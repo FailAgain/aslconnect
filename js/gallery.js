@@ -22,32 +22,44 @@
     }
 
     function initGalleryFunctions() {
-        var gallery = new Flickity('#j_library-gallery-family', {
-            accessibility: true,
-            contain: true,
-            setGallerySize: false,
-            draggable: false,
-            pageDots: false
-        });
+        var element = document.querySelector('#j_library-gallery');
 
+        if (element) {
+            var gallery = new Flickity(element, {
+                accessibility: true,
+                contain: true,
+                setGallerySize: false,
+                draggable: false,
+                pageDots: false
+            });
+        } else {
+            console.log('gallery element not found');
+        }
 
-        $('#j-closeGallery').click(function() {
-            $('#j-gallery-overlay-family').toggleClass('hidden');
+        if ($('#j-closeGallery')) {
 
+            $('#j-closeGallery').click(function() {
+                pauseAllVideos();
+                $('#j-gallery-overlay').toggleClass('hidden');
+            });
 
-        });
+        } else {
+            console.log('gallery close element not found');
+        }
+
 
         $('.j-openGallery').click(function() {
 
-            $('#j-gallery-overlay-family').toggleClass('hidden');
+            $('#j-gallery-overlay').toggleClass('hidden');
             gallery.resize();
+            autoplaySelectedVideo();
         });
 
         //autoplays & pauses each video when selected.
         gallery.on('select', function() {
 
-           pauseAllVideos();
-           autoplaySelectedVideo();
+            pauseAllVideos();
+            autoplaySelectedVideo();
 
         })
     }

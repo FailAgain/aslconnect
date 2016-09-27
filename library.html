@@ -29,8 +29,14 @@
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- <script type="text/javascript" src="js/library.js"></script> -->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,700" rel="stylesheet">
+    <script src="https://use.typekit.net/cqb5qru.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
@@ -125,7 +131,7 @@
     <footer class="AC_footer">
         <img src="/img/gallaudet-footer.png " class="img-responsive " alt="logo ">
     </footer>
-    <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
+<!--     <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
         <header>
             <h1>Family</h1>
             <div class="AC_navbar-close .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
@@ -147,8 +153,8 @@
                 </video>
             </article>
         </div>
-    </div>
-    <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
+    </div> -->
+ <!--    <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
         <header>
             <h1>Family</h1>
             <div class="AC_navbar-close j-closeGallery .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
@@ -170,11 +176,11 @@
                 </video>
             </article>
         </div>
-    </div>
-    <div id="j-gallery-overlay-family" class="AC_gallery-overlay hidden">
+    </div> -->
+    <div id="j-gallery-overlay" class="AC_gallery-overlay">
         <header>
             <h1>Family</h1>
-            <div class="AC_navbar-close  .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
+            <div  id="j-closeGallery" class="AC_navbar-close  .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
         </header>
         <div class="AC_library-gallery" id="j_library-gallery">
             <article class="AC_library-card">
@@ -196,7 +202,6 @@
     </div>
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js "></script>
     <script type="text/javascript" src="js/gallery.js"></script>
-    <script type="text/javascript " src="http://player.kaltura.com/kWidget/kWidget.getSources.js "></script>
 </body>
 
 </html>
