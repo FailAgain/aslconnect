@@ -94,11 +94,11 @@
         </div>
     </div>
     <div class="AC_section-tiles">
-        <article class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT9') center center no-repeat; background-size: cover;" "><p>Family</p></article>
-        <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT6') center no-repeat; background-size: cover; " ">
+        <article class="AC_component-tile j-openGallery" data-gallery-id="1" style="background: url('https://unsplash.it/700/?random&blur&xrT9') center center no-repeat; background-size: cover;" "><p>Family</p></article>
+        <article class="AC_component-tile j-openGallery " data-gallery-id="2" style="background: url( 'https://unsplash.it/700/?random&blur&xrT6') center no-repeat; background-size: cover; " ">
             <p>Conversational</p>
         </article>
-        <article class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT5') center no-repeat; background-size: cover;" "><p>Science</p></article>
+        <article data-gallery-id="3" class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT5') center no-repeat; background-size: cover;" "><p>Science</p></article>
         <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT2') center no-repeat; background-size: cover; " ">
             <p>City Life</p>
         </article>
@@ -131,15 +131,15 @@
     <footer class="AC_footer">
         <img src="/img/gallaudet-footer.png " class="img-responsive " alt="logo ">
     </footer>
-<!--     <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
+    <div data-gallery-id="1" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
             <h1>Family</h1>
-            <div class="AC_navbar-close .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
+        <div  data-gallery-id="1" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
-        <div class="AC_library-gallery" id="j_library-gallery-family">
+        <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="1">
             <article class="AC_library-card">
                 <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">
@@ -153,16 +153,16 @@
                 </video>
             </article>
         </div>
-    </div> -->
- <!--    <div id="j-gallery-overlay" class="AC_gallery-overlay hidden">
+    </div>
+    <div data-gallery-id="2" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
-            <h1>Family</h1>
-            <div class="AC_navbar-close j-closeGallery .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
+            <h1>Conversational</h1>
+        <div  data-gallery-id="2" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
-        <div class="AC_library-gallery" id="j_library-gallery">
+        <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="2">
             <article class="AC_library-card">
                 <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">
@@ -176,16 +176,17 @@
                 </video>
             </article>
         </div>
-    </div> -->
-    <div id="j-gallery-overlay" class="AC_gallery-overlay">
+    </div>
+
+     <div data-gallery-id="3" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
-            <h1>Family</h1>
-            <div  id="j-closeGallery" class="AC_navbar-close  .AC_gallery-overlay .close-button"><img src="/img/icon-menu-close.svg"></div>
+            <h1>Science</h1>
+        <div  data-gallery-id="3" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
-        <div class="AC_library-gallery" id="j_library-gallery">
+        <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="3">
             <article class="AC_library-card">
                 <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">

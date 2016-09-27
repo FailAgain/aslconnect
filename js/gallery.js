@@ -1,9 +1,3 @@
-    function closeGallery() {
-        $('.j-closeGallery').click(function() {
-            $('#j-gallery-overlay-family').toggleClass('hidden');
-        });
-    }
-
     function pauseAllVideos() {
         //pauses all videos on page
         $('video').each(function() {
@@ -13,55 +7,86 @@
         });
     }
 
-    function autoplaySelectedVideo() {
+    function playSelectedVideo(element) {
         //starts only the current video
-        $('.is-selected video').get(0).play(function() {
+        $(element).find('.is-selected video').get(0).play(function() {
             var isplaying = $(this).get(0).playing;
             console.log('video is playing: ' + isplaying);
         });
     }
 
-    function initGalleryFunctions() {
-        var element = document.querySelector('#j_library-gallery');
 
-        if (element) {
-            var gallery = new Flickity(element, {
+    function newGallery(value) {
+        var gallery = new Flickity(value, {
+            accessibility: true,
+            contain: true,
+            setGallerySize: false,
+            draggable: false,
+            pageDots: false
+        });
+
+        //creates new gallery instance
+        return gallery;
+    }
+
+    // forEach method, could be shipped as part of an Object Literal/Module
+    var forEach = function(array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]); // passes back stuff we need
+        }
+    };
+
+    function initGalleryFunctions() {
+        var galleries = document.querySelectorAll('.AC_library-gallery');
+
+        forEach(galleries, function(index, value) {
+            var tempIndex = index + 1;
+            var id = $(value).data('gallery-id');
+            var galleryAttribute = "[data-gallery-id='" + id + "']";
+
+            console.log([value, 'running through #' + tempIndex + ' gallery', 'with id of: ' + id, galleryAttribute]);
+
+            //initalize current gallery
+            var gallery = new Flickity(value, {
                 accessibility: true,
                 contain: true,
                 setGallerySize: false,
                 draggable: false,
                 pageDots: false
             });
-        } else {
-            console.log('gallery element not found');
-        }
 
-        if ($('#j-closeGallery')) {
-
-            $('#j-closeGallery').click(function() {
+            //ensures proper playthrough - when any video is selected, comes into view in the gallery, run these functions
+            gallery.on('select', function() {
+                console.log('a video is selected')
+                    //a bit obvious what we're doing
                 pauseAllVideos();
-                $('#j-gallery-overlay').toggleClass('hidden');
+
+                //play the current selected video
+                playSelectedVideo(value);
             });
 
-        } else {
-            console.log('gallery close element not found');
-        }
+            if ($('.j-closeGallery')) {
 
+                $('.j-closeGallery' + galleryAttribute).click(function() {
+                    pauseAllVideos();
+                    $('.j-gallery-overlay').addClass('hidden');
+                    console.log('closing this gallery');
+                });
 
-        $('.j-openGallery').click(function() {
+            } else {
+                console.log('gallery close element not found');
+            }
 
-            $('#j-gallery-overlay').toggleClass('hidden');
-            gallery.resize();
-            autoplaySelectedVideo();
+            $('.j-openGallery' + galleryAttribute).click(function() {
+                console.log('opening gallery ' + $(this).data('gallery-id'));
+
+                $('.j-gallery-overlay' + galleryAttribute).removeClass('hidden');
+                gallery.resize();
+                playSelectedVideo(value);
+                console.log('opening this gallery');
+            });
+
         });
-
-        //autoplays & pauses each video when selected.
-        gallery.on('select', function() {
-
-            pauseAllVideos();
-            autoplaySelectedVideo();
-
-        })
     }
 
     $(function() {
