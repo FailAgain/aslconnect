@@ -16,7 +16,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Our CSS -->
     <!--<link href="http://www2.gallaudet.edu/site/css/screen.csgz" rel="stylesheet">-->
@@ -28,7 +29,7 @@
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#AC_navbar">
@@ -38,87 +39,96 @@
     <header class="AC_header">
         <img src="/img/gallaudet-header.png" class="img-responsive AC_header-gallaudet" alt="logo">
     </header>
-    <div class="AC_fold AC_section-welcome" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_obniz6pd/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover; ">
-        <div class="embed-container">
-        </div>
-        <div id="j-welcome" class="AC_section-welcomebox">
-            <h1>ASL by Topic</h1>
-            <h2>Review and learn signs</h2>
-        </div>
-        <div id="j-navmobilemenu" class="AC_navbarmobile">
-            <div class="nav-header">
+    <div class="AC_Page row">
+        <div class="AC_fold AC_section-welcome" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_obniz6pd/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover; ">
+            <div class="embed-container">
+            </div>
+            <div id="j-welcome" class="AC_section-welcomebox">
+                <h1>ASL by Topic</h1>
+                <h2>Review and learn signs</h2>
+            </div>
+            <div id="j-navmobilemenu" class="AC_navbarmobile">
+                <div class="nav-header">
+                    <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+                    <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
+                </div>
+                <ul>
+                    <li class="AC_navbarmobile-li">
+                        <a href="/basic.html">ASL for Free</a>
+                    </li>
+                    <li class="AC_navbarmobile-li">
+                        <a href="/asl.html">ASL Classes</a>
+                    </li>
+                    <li class="AC_navbarmobile-li">
+                        <a href="/dst.html">Deaf Studies</a>
+                    </li>
+                    <li class="AC_navbarmobile-li">
+                        <a href="/placement.html">Placement Test</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="AC_navbar">
                 <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
-                <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
-            </div>
-            <ul>
-                <li class="AC_navbarmobile-li">
-                    <a href="/basic.html">ASL for Free</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/asl.html">ASL Classes</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/dst.html">Deaf Studies</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/placement.html">Placement Test</a>
-                </li>
-            </ul>
-        </div>
-        <div class="AC_navbar">
-            <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
-            <ul>
-                <li class="AC_navbar-li">
-                    <a href="/basic.html">ASL for Free</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/asl.html">ASL Classes</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/dst.html">Deaf Studies</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/placement.html">Placement Test</a>
-                </li>
-            </ul>
-            <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
+                <ul>
+                    <li class="AC_navbar-li">
+                        <a href="/basic.html">ASL for Free</a>
+                    </li>
+                    <li class="AC_navbar-li">
+                        <a href="/asl.html">ASL Classes</a>
+                    </li>
+                    <li class="AC_navbar-li">
+                        <a href="/dst.html">Deaf Studies</a>
+                    </li>
+                    <li class="AC_navbar-li">
+                        <a href="/placement.html">Placement Test</a>
+                    </li>
+                </ul>
+                <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="AC_section-tiles">
-        <article class="AC_component-tile j-openGallery" data-gallery-id="1" style="background: url('https://unsplash.it/700/?random&blur&xrT9') center center no-repeat; background-size: cover;" "><p>Family</p></article>
-        <article class="AC_component-tile j-openGallery " data-gallery-id="2" style="background: url( 'https://unsplash.it/700/?random&blur&xrT6') center no-repeat; background-size: cover; " ">
-            <p>Conversational</p>
-        </article>
-        <article data-gallery-id="3" class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT5') center no-repeat; background-size: cover;" "><p>Science</p></article>
-        <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT2') center no-repeat; background-size: cover; " ">
-            <p>City Life</p>
-        </article>
-        <article class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT1') center no-repeat; background-size: cover;" "><p>Household Things</p></article>
-            <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT02') center center no-repeat; background-size: cover; " ">
-            <p>Transportation</p>
-        </article>
-        <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT10') center no-repeat; background-size: cover; " ">
+        <div class="AC_section-tiles">
+            <article class="AC_component-tile j-openGallery" data-gallery-id="1" style="background: url('https://unsplash.it/700/?random&blur&xrT9') center center no-repeat; background-size: cover;" "><p>Family</p></article>
+        <article class="AC_component-tile j-openGallery " data-gallery-id="2 " style="background:
+                url( 'https://unsplash.it/700/?random&blur&xrT6') center no-repeat; background-size:
+                cover; " ">
+                <p>Conversational</p>
+            </article>
+            <article data-gallery-id="3" class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT5') center no-repeat; background-size: cover;" "><p>Science</p></article>
+        <article class="AC_component-tile j-openGallery " style="background: url(
+                'https://unsplash.it/700/?random&blur&xrT2') center no-repeat; background-size: cover; " ">
+                <p>City Life</p>
+            </article>
+            <article class="AC_component-tile j-openGallery" style="background: url('https://unsplash.it/700/?random&blur&xrT1') center no-repeat; background-size: cover;" "><p>Household Things</p></article>
+            <article class="AC_component-tile j-openGallery " style="background: url(
+                'https://unsplash.it/700/?random&blur&xrT02') center center no-repeat; background-size: cover; " ">
+                <p>Transportation</p>
+            </article>
+            <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT10') center no-repeat; background-size: cover; " ">
                 <p>School</p>
             </article>
-            <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT8') center no-repeat; background-size: cover; " ">
-            <p>Cooking</p>
-        </article>
-        <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT12') center no-repeat; background-size: cover; " ">
+            <article class="AC_component-tile j-openGallery " style="background: url(
+                'https://unsplash.it/700/?random&blur&xrT8') center no-repeat; background-size: cover; " ">
+                <p>Cooking</p>
+            </article>
+            <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT12') center no-repeat; background-size: cover; " ">
                 <p>Professions</p>
             </article>
-            <article class="AC_component-tile j-openGallery " style="background: url( 'https://unsplash.it/700/?random&blur&xrT7') center no-repeat; background-size: cover; " ">
-            <p>Gestures</p>
-        </article>
-    </div>
-    <div class="AC_section AC_section-centered">
-        <h2>
+            <article class="AC_component-tile j-openGallery " style="background: url(
+                'https://unsplash.it/700/?random&blur&xrT7') center no-repeat; background-size: cover; " ">
+                <p>Gestures</p>
+            </article>
+        </div>
+        <div class="AC_section AC_section-centered">
+            <h2>
                Like what you see? Want to learn more ASL? </h2>
-        </h2>
-        <p> Take our ASL Online courses and improve your ASL beyond the free topic videos available above.</p>
-        <a class="AC_link " href="/asl.html ">
+            </h2>
+            <p> Take our ASL Online courses and improve your ASL beyond the free topic videos available
+                above.</p>
+            <a class="AC_link " href="/asl.html ">
                             More about ASL Online
                         </a>
+        </div>
     </div>
     <footer class="AC_footer">
         <img src="/img/gallaudet-footer.png " class="img-responsive " alt="logo ">
@@ -126,22 +136,28 @@
     <div data-gallery-id="1" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
             <h1>Family</h1>
-        <div  data-gallery-id="1" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
+            <div data-gallery-id="1" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
         <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="1">
             <article class="AC_library-card">
-                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
-                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
         </div>
@@ -149,46 +165,57 @@
     <div data-gallery-id="2" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
             <h1>Conversational</h1>
-        <div  data-gallery-id="2" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
+            <div data-gallery-id="2" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
         <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="2">
             <article class="AC_library-card">
-                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
-                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
         </div>
     </div>
-
-     <div data-gallery-id="3" class="j-gallery-overlay AC_gallery-overlay hidden">
+    <div data-gallery-id="3" class="j-gallery-overlay AC_gallery-overlay hidden">
         <header>
             <h1>Science</h1>
-        <div  data-gallery-id="3" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
+            <div data-gallery-id="3" class="AC_navbar-close  .AC_gallery-overlay .close-button j-closeGallery"><img src="/img/icon-menu-close.svg"></div>
         </header>
         <div class="AC_library-gallery" id="j_library-gallery" data-gallery-id="3">
             <article class="AC_library-card">
-                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
-                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop autoplay title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_obniz6pd/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_obniz6pd/flavorId/1_r148esgl/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card ">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
-                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_vzh1uhod/version/100001/acv/151/width/640">
+                    <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_vzh1uhod/flavorId/1_6vh9b8w6/format/url/protocol/http/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
             <article class="AC_library-card">
-                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
-                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4" type="video/mp4">
+                <video loop title="Free Basic ASL" data-entryid="1_n69bmwe2" data-description="" data-durationhint="37"
+                    poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_n69bmwe2/version/100001/acv/151/width/640">
+                    <source src="http://cfvod.kaltura.com/pd/p/2075801/sp/207580100/serveFlavor/entryId/1_n69bmwe2/v/1/flavorId/1_vai75onj/name/a.mp4"
+                        type="video/mp4">
                 </video>
             </article>
         </div>

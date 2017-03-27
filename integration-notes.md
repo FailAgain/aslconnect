@@ -1,8 +1,8 @@
 chanage notes:
 
-change HEADER.AC_Header to DIV.AC_Header 
+replace all instances of .embed-container to .AC_video-container
 
-add DIV#AC_Page.ROW to contain all of current ASLConnect Markup
+add DIV.AC_Page.ROW to contain all of current ASLConnect Markup
 
 now: 
 		<div class="fluid-container">
@@ -24,7 +24,7 @@ changed:
 			<nav></nav>
 			<!--your content-->
 			<!--AC content-->
-		 	<div id="AC_Page" class="row"><!-- added wrapper -->
+		 	<div class="row AC_Page"><!-- added wrapper -->
 			 	<nav></nav>
 			 	<main></main>
 			 	<section></section>

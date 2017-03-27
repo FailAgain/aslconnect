@@ -1,200 +1,1530 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0025)http://www.gallaudet.edu/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-myriadpro-n7-active wf-myriadpro-n4-active wf-myriadpro-i3-active wf-myriadpro-n3-active wf-myriadpro-i4-active wf-myriadpro-i7-active wf-minionpro-n7-active wf-minionpro-n4-active wf-minionpro-i7-active wf-minionpro-i4-active wf-active">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Gallaudet University</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <!-- Bootstrap required meta tags -->
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">    <link rel="stylesheet" href="css/main.css">
-    <!-- Our CSS -->
-    <!--<link href="http://www2.gallaudet.edu/site/css/screen.csgz" rel="stylesheet">-->
-    <link href="css/homepage.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="shortcut icon">
-    <link href="http://www2.gallaudet.edu/site/images/favicon.png" rel="icon">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home – Gallaudet University</title>
+    <meta name="description" content="Home Abstract">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+    <link rel="icon" type="image/x-icon" href="http://www.gallaudet.edu/favicon.ico">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Home Abstract">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Home">
+    <meta name="twitter:description" content="Home Abstract">
+    <meta name="twitter:creator" content="">
+    <!--<base href="http://www.gallaudet.edu/">-->
+    <base href=".">
+    <link rel="stylesheet" href="./gally/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./gally/footable.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./gally/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./gally/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="./gally/fullcalendar.css">
+    <link rel="stylesheet" type="text/css" href="./gally/screen.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Typekit -->
+    <script src="./gally/cqb5qru.js" async=""></script>
+    <script>
+    (function(d) {
+        var config = {
+                kitId: 'cqb5qru',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement,
+            t = setTimeout(function() {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") +
+                    " wf-inactive";
+            }, config.scriptTimeout),
+            tk = d.createElement("script"),
+            f = false,
+            s = d.getElementsByTagName("script")[0],
+            a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            }
+            catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+    </script>
+    <!-- Instafeed -->
+    <script src="./gally/jquery.min.js" type="text/javascript"></script>
+    <script src="./gally/footable.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./gally/instafeed.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $('.table').footable();
+    });
+    </script>
+    <style type="text/css">
+    .tk-myriad-pro {
+        font-family: "myriad-pro", sans-serif;
+    }
+    
+    .tk-minion-pro {
+        font-family: "minion-pro", serif;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: tk-myriad-pro-n7;
+        src: url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: tk-myriad-pro-i7;
+        src: url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: tk-myriad-pro-i4;
+        src: url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: tk-myriad-pro-n3;
+        src: url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: tk-myriad-pro-i3;
+        src: url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"), url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"), url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: tk-myriad-pro-n4;
+        src: url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: tk-minion-pro-n7;
+        src: url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: tk-minion-pro-i7;
+        src: url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: tk-minion-pro-i4;
+        src: url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: tk-minion-pro-n4;
+        src: url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/f15dfe/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/292a4d/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/417df7/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/d2dcfa/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"), url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"), url(https://use.typekit.net/af/65d3ef/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: myriad-pro;
+        src: url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/bd00ea/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: minion-pro;
+        src: url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/6f3fd7/0000000000000000000151d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: minion-pro;
+        src: url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/9ba020/0000000000000000000151d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: minion-pro;
+        src: url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/605658/0000000000000000000151d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: minion-pro;
+        src: url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/b318b4/0000000000000000000151d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target="#AC_navbar">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <header class="AC_header">
-        <img src="/img/gallaudet-header.png" class="img-responsive" alt="logo">
-    </header>
-    <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_c365iqzv/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover;">
-        <div class="embed-container">
-            <video id="mainvideo" crossorigin autoplay loop title="Free Basic ASL Intro Video" data-entryid="1_c365iqzv" data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_c365iqzv/version/100001/acv/151/width/640">
-                <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_c365iqzv/flavorId/1_bwgaektt/format/url/protocol/http/a.mp4" type="video/mp4">
-                <track kind="captions" language="English" srclang="en_us" label="English" id="1_o9tda5yt" src="/track.vtt" title="English" default="false">
-            </video>
-            <button id="subtitles" class="AC_video-subtitles"><img src="/img/icon-video-subtitles.svg"></button>
-            <button id="j-video-play" class="AC_video-play"><img src="/img/icon-video-play.svg"></button>
-            <button id="j-video-pause" class="AC_video-pause invisible"><img src="/img/icon-video-pause.svg"></button>
-
-        </div>
-        <div id="j-welcome" class="AC_section-welcomebox">
-            <h1>Learn Basic ASL</h1>
-            <h2>for free, online</h2>
-        </div>
-        <div id="j-navmobilemenu" class="AC_navbarmobile">
-            <div class="nav-header">
-                <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
-                <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
-            </div>
-            <ul>
-                <li class="AC_navbarmobile-li">
-                    <a href="/basic.html">ASL for Free</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/asl.html">ASL Classes</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/dst.html">Deaf Studies</a>
-                </li>
-                <li class="AC_navbarmobile-li">
-                    <a href="/placement.html">Placement Test</a>
-                </li>
-            </ul>
-        </div>
-        <div class="AC_navbar">
-            <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
-            <ul>
-                <li class="AC_navbar-li">
-                    <a href="/basic.html">ASL for Free</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/asl.html">ASL Classes</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/dst.html">Deaf Studies</a>
-                </li>
-                <li class="AC_navbar-li">
-                    <a href="/placement.html">Placement Test</a>
-                </li>
-            </ul>
-            <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
-            </div>
-        </div>
-    </div>
-    <div class="AC_section right">
-        <div class="AC_section-splash" style="background: url('img/splashes/basic-splash.jpg') center no-repeat; background-size: cover; ">
-        </div>
-        <div class="AC_section-box">
-            <div class="AC_section-textbalancer">
-                <h2>
-              Learn a Sign a Day
-            </h2>
-                <p>ASL Connect offers you several way to learn a Sign a Day. We offer email subscriptions and updates through social media. </p>
+<body id="page-top" class="bg-pattern">
+    <div class="container-fluid">
+        <header class="row header-fixed">
+            <nav class="navbar navbar-static-top border-none">
                 <div>
-                    <button data-toggle="modal" data-target="#myModal" class="AC_link">
-                        Subscribe via Email
-                    </button>
-                </div>
-                <div class="AC_py3">
-                    <a class="AC_link-image" href="/basic.html">
-                        <img src="/img/icon-facebook.svg">
+                    <div class="logo">
+                        <a href="http://www.gallaudet.edu/"> <img src="./gally/gallaudet-logo.svg" alt="Gallaudet University Logo "
+                                class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <ul class="nav navbar-nav navbar-right nav-font nav-margin ">
+                            <li class="search-link mobile">
+                                <div class="search-input">
+                                    <form action="http://www.gallaudet.edu/search-results">
+                                        <span class="mobile-search"></span>
+                                        <input placeholder="" type="text" name="terms">
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="subhead"><a href="http://www.gallaudet.edu/"> I want to...</a></div>
+                                <ul>
+                                    <li> <a href="http://www.gallaudet.edu/attending-gallaudet"
+                                            title="Find info on attending Gallaudet">Find info on attending Gallaudet</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/academics-at-gallaudet"
+                                            title="Find info on academics at Gallaudet">Find info on academics at Gallaudet</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/parents-and-families"
+                                            title="Find info for parents and families">Find info for parents and families</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/high-school-and-vr-counselors"
+                                            title="Find info for high school and VR counselors">Find info for high school and VR counselors</a>
+                                    </li>
+                                    <li> <a href="https://my.gallaudet.edu/" target="_blank" title="Find resources for faculty / staff / student">Find resources for faculty / staff / student</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/alumni" title="Find alumni resources">Find alumni resources</a>
+                                    </li>
+                                    <li> <a href="https://giving.gallaudet.edu/" target="_blank"
+                                            title="Explore ways to give to Gallaudet">Explore ways to give to Gallaudet</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="subhead"> <a href="http://www.gallaudet.edu/about" title="About">About</a>
+                                </div>
+                                <ul>
+                                    <li> <a href="http://www.gallaudet.edu/about/gallaudet-stories"
+                                            title="Gallaudet Stories">Gallaudet Stories</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/explore-campus"
+                                            title="Explore Campus">Explore Campus</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/news-and-media"
+                                            title="News and Media">News and Media</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/history-and-traditions"
+                                            title="History and Traditions">History and Traditions</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/planning-for-the-future"
+                                            title="Planning for the Future">Planning for the Future</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/administration-and-board"
+                                            title="Administration and Board">Administration and Board</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudet.edu/about/youth-programs-and-resources"
+                                            title="Youth Programs and Resources">Youth Programs and Resources</a>
+                                    </li>
+                                    <li> <a href="http://www.gallaudetathletics.com/" target="_blank"
+                                            title="Bison Athletics">Bison Athletics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="subhead"> <a href="http://www.gallaudet.edu/admissions/im-ready-to-apply"
+                                        title="Apply">Apply</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="subhead"> <a href="http://www.gallaudet.edu/search-a-z" title="Search A-Z">Search A-Z</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <a id="search" class="search" href="javascript:document.getElementById(&#39;searchinput&#39;).focus();">
                     </a>
-                    <a class="AC_link-image" href="/basic.html">
-                        <img src="/img/icon-twitter.svg">
-                    </a>
-                    <a class="AC_link-image" href="/basic.html">
-                        <img src="/img/icon-instagram.svg">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title" id="myModalLabel">Get our emails</h4>
-                    <div class="modal-body">
-                        <p>Grab the opportunity to learn ASL daily or weekly with us!</p>
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-email" class="control-label">Your Email Address</label>
-                                <input type="email" placeholder="type in your email" class="form-control" id="recipient-email">
-                                <button type="button" class="AC_link">Register</button>
-                            </div>
+                    <div class="search-input">
+                        <form action="http://www.gallaudet.edu/search-results">
+                            <input id="searchinput" placeholder="" type="text" name="terms">
                         </form>
-
+                    </div>
+                    <a class="mobile-menu" href="javascript:;"><span title="Open Menu"></span></a>
+                </div>
+            </nav>
+        </header>
+        <div class="AC_Page row">
+            <div class="AC_fold AC_section AC_section-welcome AC_section-gradient" style="background: url('http://cdn.kaltura.com/p/2075801/thumbnail/entry_id/1_c365iqzv/width/1000/height/500/type/1/quality/75') center no-repeat; background-size: cover;">
+                <div class="AC_video-container">
+                    <video id="mainvideo" crossorigin autoplay loop title="Free Basic ASL Intro Video" data-entryid="1_c365iqzv"
+                        data-description="" data-durationhint="37" poster="http://cfvod.kaltura.com/p/2075801/sp/207580100/thumbnail/entry_id/1_c365iqzv/version/100001/acv/151/width/640">
+                        <source src="http://cdnbakmi.kaltura.com/p/2075801/sp/207580100/playManifest/entryId/1_c365iqzv/flavorId/1_bwgaektt/format/url/protocol/http/a.mp4"
+                            type="video/mp4">
+                        <track kind="captions" language="English" srclang="en_us" label="English" id="1_o9tda5yt" src="/track.vtt"
+                            title="English" default="false">
+                    </video>
+                    <button id="subtitles" class="AC_video-subtitles"><img src="/img/icon-video-subtitles.svg"></button>
+                    <button id="j-video-play" class="AC_video-play"><img src="/img/icon-video-play.svg"></button>
+                    <button id="j-video-pause" class="AC_video-pause invisible"><img src="/img/icon-video-pause.svg"></button>
+                </div>
+                <div id="j-welcome" class="AC_section-welcomebox">
+                    <h1>Learn Basic ASL</h1>
+                    <h2>for free, online</h2>
+                </div>
+                <div id="j-navmobilemenu" class="AC_navbarmobile">
+                    <div class="nav-header">
+                        <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+                        <div id="j-navmobilemenu-close" class="AC_navbar-close"><img src="/img/icon-menu-close.svg"></div>
+                    </div>
+                    <ul>
+                        <li class="AC_navbarmobile-li">
+                            <a href="/basic.html">ASL for Free</a>
+                        </li>
+                        <li class="AC_navbarmobile-li">
+                            <a href="/asl.html">ASL Classes</a>
+                        </li>
+                        <li class="AC_navbarmobile-li">
+                            <a href="/dst.html">Deaf Studies</a>
+                        </li>
+                        <li class="AC_navbarmobile-li">
+                            <a href="/placement.html">Placement Test</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="AC_navbar">
+                    <a href="/"><img class="AC_header-aslconnect AC_icon-xsmall" src="/img/aslconnect.svg"></a>
+                    <ul>
+                        <li class="AC_navbar-li">
+                            <a href="/basic.html">ASL for Free</a>
+                        </li>
+                        <li class="AC_navbar-li">
+                            <a href="/asl.html">ASL Classes</a>
+                        </li>
+                        <li class="AC_navbar-li">
+                            <a href="/dst.html">Deaf Studies</a>
+                        </li>
+                        <li class="AC_navbar-li">
+                            <a href="/placement.html">Placement Test</a>
+                        </li>
+                    </ul>
+                    <div id="j-navmobilemenu-open" class="AC_navbar-menu"><img src="/img/icon-menu.svg">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="AC_section left">
-        <div class="AC_section-splash " style="background: url('img/splashes/basic-theme.jpg') center no-repeat; background-size: cover; "></div>
-        <div class="AC_section-box">
-            <div class="AC_section-textbalancer">
-                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-tutor.svg">
-                <h2>
+            <div class="AC_section right">
+                <div class="AC_section-splash" style="background: url('img/splashes/basic-splash.jpg') center no-repeat; background-size: cover; ">
+                </div>
+                <div class="AC_section-box">
+                    <div class="AC_section-textbalancer">
+                        <h2>
+              Learn a Sign a Day
+            </h2>
+                        <p>ASL Connect offers you several way to learn a Sign a Day. We offer
+                            email subscriptions and updates through social media. </p>
+                        <div>
+                            <button data-toggle="modal" data-target="#myModal" class="AC_link">
+                                Subscribe via Email
+                            </button>
+                        </div>
+                        <div class="AC_py3">
+                            <a class="AC_link-image" href="/basic.html">
+                                <img src="/img/icon-facebook.svg">
+                            </a>
+                            <a class="AC_link-image" href="/basic.html">
+                                <img src="/img/icon-twitter.svg">
+                            </a>
+                            <a class="AC_link-image" href="/basic.html">
+                                <img src="/img/icon-instagram.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title" id="myModalLabel">Get our emails</h2>
+                            <div class="modal-body">
+                                <p>Grab the opportunity to learn ASL daily or weekly with us!</p>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-email" class="control-label">Your Email Address</label>
+                                        <input type="email" placeholder="type in your email" class="form-control" id="recipient-email">
+                                        <button type="button" class="AC_link">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="AC_section left">
+                <div class="AC_section-splash " style="background: url('img/splashes/basic-theme.jpg') center no-repeat; background-size: cover; "></div>
+                <div class="AC_section-box">
+                    <div class="AC_section-textbalancer">
+                        <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-tutor.svg">
+                        <h2>
                 ASL Topics by Theme
             </h2>
-                <p>
-                    Check out our introductory ASL videos, organized by a variety of themes. Videos updated weekly.
-                </p>
-                <div><a class="AC_link" href="/library.html">
+                        <p>
+                            Check out our introductory ASL videos, organized by a variety of themes. Videos updated weekly.
+                        </p>
+                        <div><a class="AC_link" href="/library.html">
                             See Videos by Topic
                         </a></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="AC_section right">
-        <div class="AC_section-splash " style="background: url('img/splashes/basic-signschool.jpg') right no-repeat; background-size: cover; "></div>
-        <div class="AC_section-box">
-            <div class="AC_section-textbalancer">
-                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-signschool.png">
-                <h2>
+            <div class="AC_section right">
+                <div class="AC_section-splash " style="background: url('img/splashes/basic-signschool.jpg') right no-repeat; background-size: cover; "></div>
+                <div class="AC_section-box">
+                    <div class="AC_section-textbalancer">
+                        <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-signschool.png">
+                        <h2>
 
 
                 Self-Paced ASL Lessons
             </h2>
-                <p>
-                    Sign up for self paced ASL lessons through our partnership with SignSchool.
-                </p>
-                <a class="AC_link" href="https://www.signschool.com/">
+                        <p>
+                            Sign up for self paced ASL lessons through our partnership with SignSchool.
+                        </p>
+                        <a class="AC_link" href="https://www.signschool.com/">
                             Check out Sign School
                         </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="AC_section left">
-        <div class="AC_section-splash " style="background: url('img/splashes/asl.jpg') center no-repeat; background-size: cover; "></div>
-        <div class="AC_section-box">
-            <div class="AC_section-textbalancer">
-                <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-hand.svg">
-                <h2>
+            <div class="AC_section left">
+                <div class="AC_section-splash " style="background: url('img/splashes/asl.jpg') center no-repeat; background-size: cover; "></div>
+                <div class="AC_section-box">
+                    <div class="AC_section-textbalancer">
+                        <img aria-hidden="true" class="AC_icons-heading" src="/img/icon-hand.svg">
+                        <h2>
                 Want to take classes?
             </h2>
-                <p>
-                    For more in-depth learning of ASL, sign up for one of our online classes.
-                </p>
-                <div><a class="AC_link" href="/asl.html">
+                        <p>
+                            For more in-depth learning of ASL, sign up for one of our online classes.
+                        </p>
+                        <div><a class="AC_link" href="/asl.html">
                             Start today
                         </a></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer class="row">
+            <div class="col-sm-5 left">
+                <div class="left-footer">
+                    <div class="address">
+                        <p>800 Florida Avenue, NE
+                            <br>Washington, DC 20002</p>
+                        <div class="social">
+                            <ul>
+                                <li class="facebook"><a href="http://www.facebook.com/gallaudetu" title="Gallaudet University Facebook"
+                                        target="_blank"><span>Facebook</span></a></li>
+                                <li class="twitter"><a href="http://www.twitter.com/gallaudetu" target="_blank"><span>Twitter</span></a></li>
+                                <li class="youtube"><a href="http://www.youtube.com/user/GallaudetVideo" target="_blank"><span>YouTube</span></a></li>
+                                <li class="instagram"><a href="https://instagram.com/gallaudetu" target="_blank"><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="address phone">
+                        <p>Operator/Main Switchboard
+                            <br>(202) 651-5000</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="contact">
+                        <p><a class="extLink" href="https://my.gallaudet.edu/directory" title="Contact Us"
+                                target="_blank">Contact Us</a></p>
+                        <p><a class="intLink" href="http://www.gallaudet.edu/public-safety/emergency-preparedness-guide"
+                                title="Emergency Preparedness Guide">Emergency Information</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 center footer-logo" style="background:rgba(0, 0, 0, 0) url(&#39;images/Site/footer-logo-v2.svg&#39;) no-repeat scroll center center / contain"></div>
+            <div class="col-sm-5 right">
+                <div class="btn-group-vertical footer-button-group">
+                    <a type="button" class="btn btn-info footer-button margin-bottom-15 margin-top-20 btn-xl page-scroll"
+                        href="http://my.gallaudet.edu/" target="_blank">
+                        <span class="button">my.Gallaudet</span>
+                    </a>
+                    <a type="button" class="btn btn-info footer-button  btn-xl page-scroll" href="http://www.gallaudet.edu/human-resources/employment-opportunities"
+                        target="">
+                        <span class="button">Careers @ GU</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="AC_footer">
-        <img src="/img/gallaudet-footer.png" class="img-responsive" alt="logo">
-    </footer>
+    </div>
+    <script type="text/javascript" src="./gally/modernizr.js"></script>
+    <script type="text/javascript" src="./gally/jquery.mobile.js"></script>
+    <script type="text/javascript" src="./gally/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./gally/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="./gally/moment.min.js"></script>
+    <script type="text/javascript" src="./gally/fullcalendar.js"></script>
+    <script>
+    var gallaudet = {
+        init: function() {
+            gallaudet.customCheckbox();
+            gallaudet.customRadio();
+            gallaudet.video();
+            //gallaudet.instagram();
+            gallaudet.calendar.init();
+            gallaudet.search();
+            gallaudet.homeContentHeight();
+            gallaudet.onScroll();
+            gallaudet.touchTopNav();
+            if (jQuery('.grid-slideshow').length > 0) {
+                gallaudet.sizeGridSlider();
+            }
+            gallaudet.sidebarArrange();
+
+            gallaudet.openMenu();
+            if (jQuery('.subnavigation').length > 0) {
+                gallaudet.subnav.init();
+            }
+            jQuery('.flexslider').flexslider({
+                animation: 'slide',
+                controlsContainer: '.flex-container'
+            });
+
+            jQuery('.expand-button>a').click(function(event) {
+                var element = jQuery(event.target).closest(
+                    'div.expand-button').next('.expand-container');
+                element.slideToggle();
+                jQuery(event.target).children('.arrow').toggleClass('up');
+            });
+
+            jQuery(window).load(function() {
+                gallaudet.footerArrange();
+
+            });
+            if (jQuery('.home-main').length > 0) {
+                var content = jQuery('.home-content').outerHeight(),
+                    viewport = window.innerHeight,
+                    footer = jQuery('footer').outerHeight();
+                if (content < viewport - footer) {
+                    jQuery('.home-main').height(viewport - footer);
+                    /*
+                                    jQuery('.home-main').css({
+                                        minHeight: content
+                                    });
+                    */
+                }
+                jQuery('.home-content').css({
+                    marginTop: -content / 2 + jQuery('header').height()
+                });
+            }
+            jQuery(window).resize(function() {
+                gallaudet.sizeGridSlider();
+                gallaudet.footerArrange();
+                gallaudet.homeContentHeight();
+                if (window.innerWidth > 767) {
+                    jQuery('.filters.expand-container').show();
+                }
+                else {
+                    jQuery('.filters.expand-container').hide();
+                    jQuery('.mobile-only .arrow').children('.arrow').removeClass(
+                        'up');
+                }
+            });
+        },
+        customCheckbox: function() {
+
+            var checkBox = $('input[type="checkbox"]');
+
+            // Iterate thru 'chechBox' to check if there is default 'checked value'
+            $(checkBox).each(function() {
+
+                // If the default checkBox is Checked when the page is loaded,
+                if ($(this).is(':checked')) {
+                    // Add 'checked' class on button and add value to checked button
+                    $(this).parent().addClass("checked");
+                    $(this).attr("checked", true);
+                }
+            });
+            // When the 'checkBox' is clicked
+            $(checkBox).click(function() {
+                //Toggle the 'checked' Class
+                $(this).parent().toggleClass("checked");
+                //If it is 'checked'
+                if ($(this).is(':checked')) {
+                    // Add attribute
+                    $(this).attr("checked", true);
+                }
+                else {
+                    // If not, remove attribute
+                    $(this).attr("checked", false);
+                }
+            });
+
+        },
+
+        customRadio: function() {
+
+            var radioButton = $('input[type="radio"]');
+
+            // Iterate thur 'radioButton'
+            $(radioButton).each(function() {
+                // If there is default radioButton 'checked'
+                if ($(this).is(':checked')) {
+                    // Add a class 'Checked'
+                    $(this).parent().addClass("checked");
+                }
+
+            });
+            // When 'radioButton' is clicked
+            $(radioButton).click(function() {
+
+                if ($(this).is(':checked')) {
+                    // Add class 'checked' and attribute on one clicked
+                    $(this).parent().addClass("checked");
+                    $(this).attr("checked", true);
+                }
+                // Iterate thru for 'not checked'
+                $(radioButton).not(this).each(function() {
+                    // Remove 'checked' class and attribute
+                    $(this).parent().removeClass("checked");
+                    $(this).attr("checked", false);
+
+                });
+
+            });
+
+        },
+
+        homeContentHeight: function() {
+            if (jQuery('.home-main').length > 0) {
+                var content = jQuery('.home-content').outerHeight(),
+                    viewport = window.innerHeight,
+                    footer = jQuery('footer').outerHeight();
+                if (content < viewport - footer) {
+                    jQuery('.home-main').height(viewport - footer);
+                }
+                jQuery('.home-content').css({
+                    marginTop: -content / 2 + jQuery('header').height()
+                });
+            }
+        },
+        // This function will open search bar
+        search: function() {
+            // Click on the search button
+            jQuery('.navbar').find('#search').click(function(e) {
+                jQuery('.search-input').toggleClass('open');
+            });
+
+        },
+
+        // This function will decrease nav's height on user scroll
+        onScroll: function() {
+            // Scroll the screen
+            jQuery(window).scroll(function() {
+                // Decrease logo image height
+                if (jQuery(window).scrollTop() > 300) {
+                    jQuery('header.header-fixed').addClass('short');
+                    // Reposition search icon for shorten version of nav
+                    jQuery('.search').addClass(
+                        'search-position-on-scroll');
+                    // Add background white to fill the gap
+                    jQuery('.navbar > div').addClass('bg-white');
+                }
+                // If page hit the top of screen or mobile nav starts
+                if (jQuery(window).scrollTop() <= 300) {
+                    // Remove all above classes
+                    jQuery('header').removeClass('short');
+                    jQuery('.search').removeClass(
+                        'search-position-on-scroll');
+                    jQuery('.navbar > div').removeClass('bg-white');
+                }
+            });
+        },
+
+
+        // this function will open the video overlay
+        video: function() {
+            // if there is a watch video trigger
+            if (jQuery('.watch-video').length > 0) {
+                // on click
+                jQuery('.watch-video').click(function(e) {
+                    // prevent the normal link from taking the user to youtube
+                    e.preventDefault();
+                    // grab the embed link
+                    var link = jQuery(this);
+                    // set the source for the hidden iframe to the embed link
+                    jQuery('iframe.video-container').attr('src', link.attr(
+                        'href'));
+                    // open the video overlay
+                    jQuery('section.video-overlay').toggleClass('open');
+                });
+            }
+            // click on the video overlay
+            jQuery('section.video-overlay').click(function() {
+                // remove the class "open" to close it
+                jQuery(this).toggleClass('open');
+                // remove the source to keep it from continuing to play when closed
+                jQuery(this).find('iframe').attr('src', '');
+            });
+        },
+        //this function will open and close the news and expandable callouts
+        expandSection: function() {
+
+        },
+        // this function activates the instagram feed if present on the page
+        instagram: function() {
+            // if the instafeed class is found, load the feed
+            if (jQuery('#instagramfeed').length > 0) {
+                // replace user id and acccesstoken with desired account
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    userId: 1112618607,
+                    accessToken: '1112618607.b5602d3.933e105f23914a1686b9710d2944b7ea',
+                    // added target _blank and .caption class to layout
+                    template: '<a href="{{link}}" target="_blank" class="slide"><img src="{{image}}" /><p class="caption">{{caption}}</p></a>',
+                    after: function() {
+                        gallaudet.sizeInstagram();
+                    }
+                });
+                userFeed.run();
+            }
+        },
+        // resizes the slideshow to fit the container
+        sizeInstagram: function() {
+            var slides = jQuery('.instagram-feed #instafeed a'),
+                realwidth = jQuery('.instagram-feed a img').outerWidth(),
+                slidecontainer = jQuery('.instagram-feed > div'),
+                longcontainer = jQuery('#instafeed'),
+                longwidth = realwidth * (slides.length);
+            // To maintain slide width:
+            slides.each(function() {
+                jQuery(this).width(realwidth);
+            });
+            // sets the height on the controls to equal the width
+            jQuery('.instagram-feed .control').height(realwidth);
+            // sets the width of the slidecontainer to the width of all slides
+            longcontainer.width(longwidth);
+            // activates event observers on controls
+            gallaudet.slideshowControls(jQuery('.instagram-feed'));
+        },
+        // resizes the slideshow to fit the container
+        sizeGridSlider: function() {
+            var slides = jQuery('.grid-slideshow .slide'),
+                slides1 = jQuery('.grid-slideshow .row.first .slide'),
+                slides2 = jQuery('.grid-slideshow .row.second .slide'),
+                longcontainer1 = jQuery('.grid-slideshow .row.first > div'),
+                longcontainer2 = jQuery('.grid-slideshow .row.second > div');
+
+            slides.css('width', '');
+            longcontainer1.css('width', '');
+            longcontainer2.css('width', '');
+
+            var realwidth = jQuery('.grid-slideshow .row .slide').outerWidth(),
+                longwidth1 = realwidth * (slides1.length),
+                longwidth2 = realwidth * (slides2.length);
+
+            // To maintain slide width:
+            slides.each(function() {
+                jQuery(this).outerWidth(realwidth);
+            });
+            // sets the width of the slidecontainer to the width of all slides
+            longcontainer1.width(longwidth1);
+            longcontainer2.width(longwidth2);
+            if (window.innerWidth < 770) {
+
+            }
+            // activates event observers on controls
+            gallaudet.slideshowControls(jQuery('.grid-slideshow'));
+        },
+        slideshowControls: function(slideshow) {
+            var controls = slideshow.find('.control');
+            // when the control links are clicked
+            controls.unbind('click').click(function() {
+                // if it is the prev-arrow go backwards
+                if (jQuery(this).hasClass('prev-arrow')) {
+                    gallaudet.slideshowAdvance(true, slideshow);
+                }
+                else {
+                    // otherwise forwards
+                    gallaudet.slideshowAdvance(false, slideshow);
+                }
+            });
+            // touch controls requiring jquery mobile
+            if (jQuery('.touch').length > 0) {
+                slideshow.unbind('swiperight').bind("swiperight", function() {
+                    gallaudet.slideshowAdvance(true, slideshow);
+                });
+                slideshow.unbind('swipeleft').bind("swipeleft", function() {
+                    gallaudet.slideshowAdvance(false, slideshow);
+                });
+            }
+        },
+
+        // This function will open subhead in window tablet; jQuery mobile
+        touchTopNav: function() {
+            var topnav = jQuery('.subhead a');
+            topnav.bind('tap', function(event) {
+                var ul = $(this).parent('div').next('ul');
+                if (ul.length > 0 && !ul.hasClass('show')) {
+                    $('.nav ul').removeClass('show');
+                    ul.addClass('show');
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+            });
+        },
+
+        // advance the slideshow
+        slideshowAdvance: function(prev, slideshow) {
+            // touch controls requiring jquery mobile
+            if (jQuery('.touch').length > 0) {
+                slideshow.unbind("swiperight");
+                slideshow.unbind("swipeleft");
+            }
+            // unbind click action
+            slideshow.find('.control').unbind("click");
+            // get slides and containers
+            var slides = slideshow.find('.slide'),
+                slidecontainer = slideshow.children('div'),
+                longcontainer = slideshow.children('div').children('div');
+
+            // get the pixel position of the left of the long container (how far the user has navigated the slider)
+            var currentleft = parseFloat(longcontainer.css('left').split('p').shift()),
+                move = currentleft;
+            // if prev
+            if (prev !== false) {
+                // move the slider back the length of one slide
+                if (Math.floor(currentleft) !== 0 && currentleft < 0) {
+                    move = move + slides.outerWidth(true);
+                    // otherwise if at the beginning of the slider, move it to the end
+                }
+                else {
+                    move = -(longcontainer.width() - slidecontainer.width());
+                }
+                // if the slider is not at the end of the slider, move it one slide forward
+                // -1 added for odd numbered width issue (it'd be 1px off and extend one slidewidth beyond the container)
+            }
+            else if (currentleft > -(longcontainer.width() - slidecontainer.width() -
+                    1)) {
+                move = move - slides.outerWidth(true);
+                // otherwise move it to the beginning
+            }
+            else {
+                move = 0;
+            }
+            // initiate the move
+            longcontainer.css({
+                left: move
+            });
+            // reactivate slideshow controls after transition ends.
+            setTimeout(function() {
+                gallaudet.slideshowControls(slideshow);
+            }, 400);
+        },
+        // dividing the left sidebar on mobile
+        sidebarArrange: function() {
+            if (window.innerWidth <= 768) {
+                if (jQuery('.left-sidebar .bottom').length > 0) {
+                    jQuery('.left-sidebar .bottom').appendTo(
+                        '.mobile.left-sidebar');
+                }
+                if (jQuery('#calendar').length > 0) {
+                    jQuery('#calendar').appendTo('.mobile-calendar-container');
+                }
+            }
+        },
+
+        footerArrange: function() {
+            if (window.innerWidth <= 768) {
+                jQuery('footer .col-sm-4.left').appendTo('footer');
+            }
+            else {
+                jQuery('footer .col-sm-4.center').appendTo('footer');
+                jQuery('footer .col-sm-4.right').appendTo('footer');
+            }
+
+        },
+        /**
+            Left hand navigation
+        */
+        subnav: {
+            init: function() {
+                /* show back button if we're inside the site */
+                if (jQuery('.subnavigation li.active').length > 0) {
+
+                    // shows the back button
+                    //jQuery('.back').addClass('show-back');
+
+                    // shows the back button (only if parent li is not root navigation home page)
+                    //if(!jQuery('li.active').prev('.home'))
+                    //{
+                    //    jQuery('.back').addClass('show-back');
+                    // }
+
+                    //if(jQuery('li.active:not(.home)'))
+                    //{
+                    //    jQuery('.back').addClass('show-back');
+                    //}
+
+
+                    // use built in "active" nav class to pull current path
+                    // gets the last active li
+                    var li = jQuery('.subnavigation .active').last();
+                    // if there isn't a child ul
+                    if (li.children('ul').toArray().length === 0) {
+                        // get its parent
+                        var newli = jQuery(li.parents('li')[0]);
+                        // add class to show children
+                        newli.addClass('show-children');
+                        // add open to child ul of parent
+                        newli.children('ul').addClass('open');
+                        // for each parent ul add class
+                        newli.parents('ul').each(function(index, element) {
+                            switch (index) {
+                                case 0:
+                                    // if the first one, add show-one
+                                    jQuery(element).addClass(
+                                        'open show-one');
+                                    break;
+                                default:
+                                    // if other than first add show-none
+                                    jQuery(element).addClass(
+                                        'open show-none');
+                                    break;
+                            }
+                        });
+
+                        if (!jQuery('li.active').siblings('.home').length) {
+                            jQuery('.back').addClass('show-back');
+
+                        }
+
+
+                        // if it does have a child ul
+                    }
+                    else {
+                        // add show-children to this li
+                        li.addClass('show-children');
+                        // add open to its child ul
+                        li.children('ul').addClass('open');
+                        // for each ancestor ul
+                        li.parents('ul').each(function(index, element) {
+                            switch (index) {
+                                case 0:
+                                    // if the first parent, add show-one
+                                    jQuery(element).addClass(
+                                        'open show-one');
+                                    break;
+                                default:
+                                    // otherwise add show-none
+                                    jQuery(element).addClass(
+                                        'open show-none');
+                                    break;
+                            }
+                        });
+                        jQuery('.back').addClass('show-back');
+                    }
+                }
+                /* add click action to all nav items */
+                jQuery('.subnavigation li:not(.back) a').click(gallaudet.subnav.clickAction);
+                /* add click action for back button */
+                jQuery('.subnavigation li.back a').click(gallaudet.subnav.clickBack);
+                // give the subnavigation container a height large enough to see all current items
+                gallaudet.subnav.resizeNav();
+            },
+
+            clickAction: function(event) {
+                // if the main menu is open
+                if ($('.subnavigation').length > 0) {
+                    // get the clicked li and its children ul
+                    var li = jQuery(event.target).closest('li'),
+                        children = li.children('ul').toArray();
+                    /* check if this nav item has children, if so show kids, if not, allow normal click action to run */
+                    if (children.length > 0 && !li.hasClass('show-children')) {
+                        // prevent default link
+                        event.preventDefault();
+                        // if back button is not shown, show it
+                        if (!jQuery('.back').hasClass('show-back')) {
+                            jQuery('.back').addClass('show-back');
+                        }
+                        // add show-children to li
+                        li.addClass('show-children');
+                        // add show-one to closest ul child
+                        li.closest('ul').addClass('show-one');
+                        // remove show-one class from ancestor ul and add class show-none
+                        li.closest('ul').parents('ul').removeClass('show-one').addClass(
+                            'show-none');
+                        // remove show-children from parent li
+                        li.parents().removeClass('show-children');
+                        // add class open to child ul
+                        li.children('ul').addClass('open');
+                    }
+                    // give the subnavigation container a height large enough to see all current items
+                    gallaudet.subnav.resizeNav();
+                }
+            },
+
+
+            clickBack: function(event) {
+                // prevent default link
+                event.preventDefault();
+                // find the closest li
+                var li = jQuery('.show-children').closest('li');
+                // remove class open
+                li.children('ul').removeClass('open');
+                // remove class show-children
+                li.removeClass('show-children');
+                // for each parent until we hit a div
+                li.parentsUntil('div').each(function(index, element) {
+                    switch (index) {
+                        case 0:
+                            // if first parent (ul), remove class show-one
+                            jQuery(element).removeClass('show-one');
+                            break;
+                        case 1:
+                            // if second parent (li) add class show-children
+                            jQuery(element).addClass('show-children');
+                            break;
+                        case 2:
+                            // if third (ul) add class show-one and remove class show-none
+                            jQuery(element).addClass('show-one').removeClass(
+                                'show-none');
+                            break;
+                    }
+                });
+                // if the closest ul has class subnav we're at the beginning and hide back button
+                if (li.closest('ul').hasClass('subnav')) {
+                    jQuery('.back').removeClass('show-back');
+                }
+                // give the subnavigation container a height large enough to see all current items
+                gallaudet.subnav.resizeNav();
+            },
+            resizeNav: function() {
+                // give the subnavigation container a height large enough to see all current items
+                var multiplier = 0;
+                if (jQuery('.subnavigation .show-children').length > 0) {
+                    var navheight = 0;
+                    jQuery(
+                        '.subnavigation li.show-back, .subnavigation .show-children > .open > li, .subnav.open:not(.show-none):not(.show-one) > li, .subnavigation .show-children'
+                    ).each(function() {
+                        navheight += jQuery(this).height();
+                    });
+
+                    jQuery('.subnavigation').height(navheight);
+                }
+                else {
+                    jQuery('.subnavigation').height('auto');
+                }
+            }
+        },
+        // open and close the mobile menu
+        openMenu: function() {
+            setTimeout(function() {
+                jQuery('.mobile-menu').click(function() {
+                    //open the mobile nav
+                    jQuery('header.header-fixed, .navbar').toggleClass(
+                        'open');
+                });
+            }, 301);
+        },
+
+        // all calendar functions
+        calendar: {
+            init: function() {
+                var defaultDate = '';
+                if (!defaultDate.trim()) {
+                    var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth() + 1; //January is 0!
+
+                    var yyyy = today.getFullYear();
+                    if (dd < 10) {
+                        dd = '0' + dd
+                    }
+                    if (mm < 10) {
+                        mm = '0' + mm
+                    }
+                    //var today = dd+'/'+mm+'/'+yyyy;
+                    defaultDate = yyyy + '-' + mm + '-' + dd;
+                }
+
+                if (jQuery('#calendar').length > 0) {
+                    jQuery('#calendar').fullCalendar({
+                        // put your options and callbacks here
+                        height: 'auto',
+                        defaultDate: defaultDate,
+                        // when a day is clicked
+                        dayClick: function() {
+                            var date = jQuery(this).attr('data-date'),
+                                year = date.split('-').shift(),
+                                month = date.split('-')[1],
+                                day = [date.split('-').pop()];
+
+                            // if the selected day has events
+                            if (jQuery(this).hasClass('has-event')) {
+                                // deselect other days
+                                jQuery('td.fc-day-number').removeClass(
+                                    'selected').removeClass(
+                                    'clicked');
+                                // select clicked day
+                                jQuery('td.fc-day-number[data-date="' +
+                                    date + '"]').addClass(
+                                    'selected').addClass(
+                                    'clicked');
+
+                                // select the day radio button if not selected
+                                // click event fires ajax call
+                                jQuery(
+                                    'input[name="display[]"][value="day"]'
+                                ).click();
+                                jQuery(
+                                    'input[name="display[]"][value="day"]'
+                                ).attr('checked', 'checked');
+                                jQuery(
+                                    'input[name="display[]"][value="day"]'
+                                ).parent().addClass('checked');
+
+                            }
+
+                            // set global for month changes
+                            gallaudet.calendar.selectedDay = date.split(
+                                '-').pop();
+                        },
+                        // after the calendar is rendered
+                        eventAfterAllRender: function() {
+
+                            var customDate = '',
+                                customYear = customDate.split('-').shift(),
+                                customMonth = customDate.split('-')[1],
+                                customDay = [customDate.split('-').pop()];
+
+                            // get the current month's days with events
+                            var year = jQuery(
+                                    'td.fc-day-number:not(.fc-other-month)'
+                                ).attr('data-date').split('-').shift(),
+                                month = jQuery(
+                                    'td.fc-day-number:not(.fc-other-month)'
+                                ).attr('data-date').split('-')[1],
+                                data = gallaudet.calendar.getdays(
+                                    year, month);
+
+                            // for each day, add class has-event for style
+                            for (i = 0; i < data.length; i++) {
+                                // have to style both overlapping tables due to structure provided by fullcalendar plugin
+                                jQuery('td.fc-day-number[data-date="' +
+                                    data[i] +
+                                    '"],td.fc-day[data-date="' +
+                                    data[i] + '"]').addClass(
+                                    'has-event');
+                            }
+                            jQuery('td.fc-day-number,td.fc-day').addClass(
+                                'has-event');
+
+                            //if you have a custom defined date, set it as today & remove the today classes from the normal Today
+                            if (customDate !== "") {
+                                var today = jQuery('td.fc-today');
+                                today.removeClass('fc-today');
+                                jQuery('td.fc-day-number[data-date="' +
+                                    customDate + '"]').addClass(
+                                    "fc-today");
+                                gallaudet.calendar.selectedDay =
+                                    customDate.split('-').pop();
+                            }
+                            // Select the same day that was selected before in the month on change
+                            if (jQuery('td.fc-day-number[data-date="' +
+                                    year + '-' + month + '-' +
+                                    gallaudet.calendar.selectedDay +
+                                    '"]').length > 0) {
+                                jQuery('td.fc-day-number[data-date="' +
+                                    year + '-' + month + '-' +
+                                    gallaudet.calendar.selectedDay +
+                                    '"]').addClass('selected').addClass(
+                                    'clicked');
+                            }
+                            else if (jQuery(
+                                    'td.fc-day-number.fc-today:not(.fc-other-month)'
+                                ).length > 0) {
+                                // Select today
+                                var today = jQuery(
+                                    'td.fc-day-number.fc-today');
+                                today.addClass('selected').addClass(
+                                    'clicked');
+
+                                // set global for month changes
+                                gallaudet.calendar.selectedDay =
+                                    today.attr('data-date').split('-')
+                                    .pop();
+                            }
+                            else {
+                                var last = jQuery(
+                                        'td.fc-day-number:not(.fc-other-month)'
+                                    ).length - 1,
+                                    td = jQuery(
+                                        'td.fc-day-number:not(.fc-other-month)'
+                                    )[last];
+                                jQuery(td).addClass('selected').addClass(
+                                    'clicked');
+
+                                gallaudet.calendar.selectedDay =
+                                    jQuery(td).attr('data-date').split(
+                                        '-').pop();
+                            }
+
+                            // get checked radio button filter
+                            var display = jQuery(
+                                'input[name="display[]"]:checked'
+                            ).val();
+
+                            // get selected day
+                            var clicked = jQuery(
+                                'td.fc-day-number.clicked');
+                            gallaudet.calendar.filters(display,
+                                clicked, false);
+
+                        }
+
+                    });
+
+                    // TODO: add onclick
+                    // tie in the radio button filters
+                    jQuery('input[name="display[]"]').click(function() {
+                        // get the value of the selected radio button
+                        var display = jQuery(this).val(),
+                            // get the first day in the month in case months have changed
+                            first = jQuery(
+                                'td.fc-day-number[data-date$="-01"]')[0],
+                            clicked = jQuery(first);
+
+                        // however, if loading the first time today is selected or user has clicked a date
+                        if (jQuery('td.fc-day-number.clicked').length > 0) {
+                            clicked = jQuery('td.fc-day-number.clicked');
+                        }
+
+                        gallaudet.calendar.filters(display, clicked, true);
+                    });
+                }
+            },
+            selectedDay: '',
+
+            getdays: function(year, month) {
+                // ajax function call to get current month's days with events
+
+                // replace data with an array of dates that have events
+                //var data = ["2015-10-14", "2015-10-28", "2015-10-31", "2015-11-02", "2015-11-16"];
+                var data = []
+                return data;
+            },
+
+            getItems: function(year, month, days, type) {
+                // ajax function call to change displayed events/news to selected day
+                var data = [];
+
+                if (days === false) {
+                    // get whole month events
+                    // set data to returned content
+                }
+                else {
+                    // get specific day(s) events
+                    // set data to returned content
+                }
+
+                // Uncomment this line to send data to function that replaces HTML with new data
+                // gallaudet.calendar.replaceItems(data, type);
+
+            },
+            // handles the radio button month,week,day filters
+            filters: function(display, clicked, goToLink) {
+
+                var year = clicked.attr('data-date').split('-').shift(),
+                    month = clicked.attr('data-date').split('-')[1],
+                    type = 'events';
+
+                if (jQuery('.blue-lists.calendar').hasClass('news-list')) {
+                    type = 'news';
+                }
+
+                // which radio button is selected
+                switch (display) {
+                    case "day":
+                        // get last clicked day
+                        var day = [clicked.attr('data-date').split('-').pop()];
+
+                        // deselect all other days
+                        jQuery('td.fc-day-number').removeClass('selected');
+                        // select the last clicked day
+                        jQuery('td.fc-day-number.clicked').addClass('selected');
+
+                        // ajax function call to change displayed events/news goes here
+                        //gallaudet.calendar.getItems(year, month, day, type);
+
+                        if (goToLink) {
+                            window.location.href = "/?" + "view=day&date=" +
+                                clicked.attr('data-date');
+                        }
+                        break;
+
+                    case "week":
+                        // get the last clicked day and its siblings
+                        var siblings = clicked.siblings(),
+                            week = [];
+
+                        // deselect all other days
+                        jQuery('td.fc-day-number').removeClass('selected');
+                        // select the last clicked day
+                        clicked.addClass('selected');
+                        // select all siblings as well
+                        siblings.addClass('selected');
+
+                        // get array range
+                        jQuery('td.fc-day-number.selected').each(function() {
+                            week.push(jQuery(this).attr('data-date').split(
+                                '-').pop());
+                        });
+
+                        // ajax function call to change displayed events/news goes here
+                        //gallaudet.calendar.getItems(year, month, week, type);
+
+                        if (goToLink) {
+                            window.location.href = "/?" + "view=week&date=" +
+                                clicked.attr('data-date');
+                        }
+                        break;
+
+                    case "month":
+                        // deselect other month's days
+                        jQuery('td.fc-day-number.fc-other-month').removeClass(
+                            'selected');
+                        // select all days in the month
+                        jQuery('td.fc-day-number[data-date^="' + year + '-' +
+                            month + '"]').addClass('selected');
+
+                        // ajax function call to change displayed events/news goes here
+                        //gallaudet.calendar.getItems(year, month, false, type);
+
+                        if (goToLink) {
+                            window.location.href = "/?" + "view=month&date=" +
+                                clicked.attr('data-date');
+                        }
+                        break;
+                }
+            },
+
+            replaceItems: function(data, type) {
+                var container = jQuery('.blue-lists.calendar.events');
+
+                // empty container
+                container.html('');
+
+                // cycle through days
+                for (i = 0; i < data.length; i++) {
+                    var html = [],
+                        daySpelled = 'Day',
+                        monthSpelled = 'Month',
+                        dayNumeric = '20',
+                        monthNumeric = '7',
+                        year = '2015',
+                        shortyear = '15',
+                        hasItems = false;
+
+                    // start this days' row
+                    html.push('<div class="row">');
+
+                    // blue header bar
+                    html.push('<h3>');
+                    html.push(daySpelled + ', ' + monthSpelled + " " + dayNumeric +
+                        ', ' + year);
+                    html.push('</h3>');
+
+                    // if there are events/news this day
+                    if (hasItems) {
+                        var link = 'http://gallaudet.edu',
+                            title = '',
+                            description = '';
+
+                        // create list group
+                        html.push('<div class="list-group">');
+
+                        if (type === "events") {
+                            // if events
+
+                            // FOR EACH EVENT
+
+                            // get start and end times
+                            var start = 'XX:XX',
+                                end = 'XX:XX';
+
+                            // begin wrapping link
+                            html.push('<a href="' + link +
+                                '" class="list-group-item row">');
+
+                            // set left column
+                            html.push('<div class="col-sm-3"><h4>' + monthNumeric +
+                                '/' + dayNumeric + '/' + shortyear +
+                                '</h4></div>');
+
+                            // begin right column
+                            html.push('<div class="col-sm-9">');
+                            // set event title
+                            html.push('<h4>' + title + '</h4>');
+                            // set event time
+                            html.push('<h4><small>' + start + ' - ' + end +
+                                '</small></h4>');
+                            // description goes here
+                            html.push('<p>' + description + '</p>');
+                            // close right column
+                            html.push('</div>');
+
+                            // close wrapping link
+                            html.push('</a>');
+
+                            // END FOR EACH EVENT
+
+                        }
+                        else {
+                            // otherwise it is news
+
+                            // FOR EACH NEWS ITEM
+
+                            // image url
+                            var img = 'image.jpg';
+
+                            // begin wrapping link
+                            html.push(
+                                '<a href="javascript:;" class="list-group-item row">'
+                            );
+
+                            // set left column
+                            html.push('<div class="col-sm-3"><img src="' + img +
+                                '"></div>');
+
+                            // begin right column
+                            html.push('<div class="col-sm-9">');
+                            // set event title
+                            html.push('<h4>' + title + '</h4>');
+                            // set news date
+                            html.push('<h4><small>' + monthSpelled + " " +
+                                dayNumeric + ', ' + year + '</small></h4>');
+                            // description goes here
+                            html.push('<p>' + description + '</p>');
+                            // close right column
+                            html.push('</div>');
+
+                            // close wrapping link
+                            html.push('</a>');
+
+                            // END FOR EACH NEWS ITEM
+                        }
+
+                        // end list group
+                        html.push('</div>');
+
+                    }
+                    else {
+                        // Nothing found empty results
+                        html.push('<p>Nothing was found for this day.</p>');
+                    }
+
+                    // close row
+                    html.push('</div>');
+
+                    var finalhtml = html.join(" ");
+                    container.append(finalhtml);
+                }
+            }
+        }
+    };
+
+    $(document).ready(function() {
+        gallaudet.init();
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Version 1 - Hide all, toggle sections
+        $('#v1 div.section').hide();
+        $('#v1 h3.toggle').click(function() {
+            $(this).next('div.section').slideToggle();
+            $(this).toggleClass('opened');
+            $(this).find('i.fa').toggleClass("fa-plus").toggleClass(
+                "fa-minus");
+        });
+    })
+    </script>
+    <script type="text/javascript">
+    $(function() {
+
+        $('.footable').footable();
+
+    });
+    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
