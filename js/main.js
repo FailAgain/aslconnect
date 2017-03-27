@@ -13,9 +13,11 @@
     function toggleSubtitles(video) {
         if (video.textTracks[0].mode == "showing") {
             $('#j-welcome').removeClass('invisible');
+            $('.AC_navbar').removeClass('sunken');
             video.textTracks[0].mode = "hidden";
         } else {
             $('#j-welcome').addClass('invisible');
+            $('.AC_navbar').addClass('sunken');
             video.textTracks[0].mode = "showing";
         }
     }
