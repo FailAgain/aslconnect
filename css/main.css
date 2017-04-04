@@ -1060,6 +1060,7 @@ body {
 
 ::cue {
     font-size: 2.5vmin;
+    font-size: calc(1.5vmin + 1.5vmax);
     font-family: 'myriad-pro', sans-serif;
     font-weight: 200;
 }

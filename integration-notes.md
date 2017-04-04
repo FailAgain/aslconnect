@@ -1,5 +1,7 @@
 chanage notes:
 
+replace css/main.CSS file
+replace js/gallery.js + js/main.js
 replace all instances of .embed-container to .AC_video-container
 
 add DIV.AC_Page.ROW to contain all of current ASLConnect Markup
