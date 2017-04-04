@@ -1003,7 +1003,7 @@ body {
     outline: none;
     border: none;
     color: hsl(207, 100%, 24%);
-    z-index: 100;
+    z-index: 99;
 }
 
 .AC_video-play.invisible,

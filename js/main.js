@@ -57,7 +57,7 @@
         //SETUP: determine which video button should be shown
         if ($('#mainvideo').length) {
             v = $('#mainvideo').get(0);
-            v.onplaying = function(){
+            v.onplaying = function() {
                 toggleVideoMode(v);
             }
         }
